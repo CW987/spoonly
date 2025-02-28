@@ -12,10 +12,6 @@ import Link from 'next/link';
 export default function Header(){
     return(
         <>
-            <div className='flex justify-between m-4 p-4'>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/add-post"}>Add Post</Link>
-
                 <SignedIn>
                     <UserButton/>
                 </SignedIn>
@@ -23,8 +19,6 @@ export default function Header(){
                     <SignUpButton/>
                     <SignInButton/>
                 </SignedOut>
-            </div>
-        
         </>
     )
 }
