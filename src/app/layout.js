@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Header from "./components/Header";
 
 // Radix
+
 
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
@@ -32,18 +32,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-
-        <Theme id="RadixTheme" accentColor="violet" appearance="dark">
-          {children}
-          <NavBar />
-          <Header/>
-        </Theme>
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Theme id="RadixTheme" accentColor="violet" appearance="dark">
+            {children}
+            <NavBar />
+          </Theme>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
