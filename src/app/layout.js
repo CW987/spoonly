@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Header from "./components/Header";
 
 // Radix
 
@@ -41,7 +40,6 @@ export default function RootLayout({ children }) {
           <Theme id="RadixTheme" accentColor="violet" appearance="dark">
             {children}
             <NavBar />
-            <Header />
           </Theme>
         </body>
       </html>

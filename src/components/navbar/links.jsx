@@ -10,12 +10,12 @@ export default function () {
         </Link>
       </Button>
       <Button asChild size="4">
-        <Link className="NavBarLinks" href={`/test`}>
+        <Link className="NavBarLinks" href={`/add-post`}>
           Add Post
         </Link>
       </Button>
       <Button asChild size="4">
-        <Link className="NavBarLinks" href={`/test`}>
+        <Link className="NavBarLinks" href={`/creationsMain`}>
           Creations
         </Link>
       </Button>
