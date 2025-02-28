@@ -42,3 +42,10 @@
   justify-content: center;
   align-items: center;
 }
+
+#NavHeader {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

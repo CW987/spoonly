@@ -6,6 +6,7 @@ import Image from "next/image";
 import FillInLogo from "./FillInLogo.png";
 import Links from "./links";
 import SearchBar from "./searchbar";
+import SignInUp from "./Header";
 
 export default function NavBar() {
   return (
@@ -16,6 +17,7 @@ export default function NavBar() {
       <Links />
       <SearchBar />
       <DropDown />
+      <SignInUp />
       <Separator my=".5" size="4" id="NavSep" />
     </div>
   );
