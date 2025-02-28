@@ -14,6 +14,8 @@ export default function Header(){
         <>
             <div className='flex justify-between m-4 p-4'>
                 <Link href={"/"}>Home</Link>
+                <Link href={"/add-post"}>Add Post</Link>
+
                 <SignedIn>
                     <UserButton/>
                 </SignedIn>
