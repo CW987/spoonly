@@ -12,6 +12,7 @@ import "@radix-ui/themes/styles.css";
 // Components
 
 import NavBar from "@/components/navbar/navbar";
+import AboutSection from "@/components/about/about";
 
 // Components
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
           <Theme id="RadixTheme" accentColor="violet" appearance="dark">
             {children}
             <NavBar />
+            <AboutSection />
           </Theme>
         </body>
       </html>
