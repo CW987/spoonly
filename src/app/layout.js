@@ -10,13 +10,6 @@ import "@radix-ui/themes/styles.css";
 
 // Radix
 
-// Radix
-
-import { Theme } from "@radix-ui/themes";
-import "@radix-ui/themes/styles.css";
-
-// Radix
-
 // Components
 
 import NavBar from "@/components/navbar/navbar";
@@ -41,18 +34,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-
-        <Theme id="RadixTheme" accentColor="violet" appearance="dark">
-          {children}
-          <NavBar />
-          <Header/>
-        </Theme>
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Theme id="RadixTheme" accentColor="violet" appearance="dark">
+            {children}
+            <NavBar />
+            <Header />
+          </Theme>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
