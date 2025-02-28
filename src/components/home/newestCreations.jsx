@@ -2,7 +2,7 @@ import { Card, Box, Separator, Heading, Text } from "@radix-ui/themes";
 
 export default function NewestCreations() {
   return (
-    <div id="NewestRecipes">
+    <div id="TopRecipes">
       <Box>
         <Card>
           <Heading>Newest Creations</Heading>
