@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+User Stories
+🐿️ As a user, I want to have a user profile page when logged in, to see all of my activiy (recipes, creations and comments)
+🐿️ As a user, I want to be able to add the recipe (or a link to) a recipe I make each day in an easy, accessible manner
+🐿️ As a user, I want to be able to add a review and a rating of the recipe
+🐿️ As a user, I want to be able to comment on other people's creations
+🐿️ As a user, I want to allow other users to comment on my creations only when logged in
+🐿️ As a user, I want to be able to edit and delete my recipes and creations
+🐿️ As a user, I want to be able to view top rated recipes and creations
+🐿️ As a user, I want to be able to filter a search to only view specific recipes
 
-## Getting Started
+Stretch Goals
+🐿️ As a user, I want to be able to upload images
+🐿️ As a user, I want to be able to only add one like per person
+🐿️ As a user, I want to be able to like comments
+🐿️ As a user, I want to be able to search recipes
+🐿️ As a user, I want to be able to search an extensive database of recipes via an API
+🐿️ As a user, I want to be able to view badges and awards for streaks
 
-First, run the development server:
+Wireframe
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Database Schema
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Trello
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Reflection
+🎯 What requirements did you achieve?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎯 Were there any requirements or goals that you were unable to achieve?
 
-## Learn More
+🎯 If so, what was it that you found difficult about these tasks?
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
+What errors or bugs did you encounter while completing your assignment? How did you solve them?
+What went really well and what could have gone better?
