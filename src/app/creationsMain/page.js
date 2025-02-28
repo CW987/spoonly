@@ -1,18 +1,17 @@
+import TopCreations from "@/components/home/topCreations"
+import NewestCreations from "@/components/home/newestCreations"
+
 export default function creationsMain(){
     return(
         <>
-        <h1>Creations Main</h1>
         <div>
-            <h2>Top Creations</h2>
-            {/* Most popular creations? */}
+            <h4>filters</h4>
         </div>
         <div>
-            <h2>Newest Creations</h2>
-            {/* List of newest creations */}
+            <TopCreations />
         </div>
         <div>
-            <h3>Filters</h3>
-            {/* filters pane */}
+        <NewestCreations />
         </div>
         </>
     )
