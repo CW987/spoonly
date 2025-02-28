@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import Header from "./components/Header";
 
 // Radix
 
@@ -25,14 +27,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Theme accentColor="violet" appearance="dark">
+          <Header/>
           {children}
         </Theme>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
