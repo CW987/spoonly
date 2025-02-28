@@ -8,15 +8,6 @@ import Header from "./components/Header";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 
-// Radix
-
-// Radix
-
-import { Theme } from "@radix-ui/themes";
-import "@radix-ui/themes/styles.css";
-
-// Radix
-
 // Components
 
 import NavBar from "@/components/navbar/navbar";
