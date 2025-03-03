@@ -31,6 +31,7 @@ export const metadata = {
   description: "Gotta eat",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
@@ -38,12 +39,14 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
+        
           <Theme
             id="RadixTheme"
             accentColor="jade"
-            appearance="dark"
+            appearance="light"
             grayColor="mauve"
           >
+
             {children}
             <NavBar />
             <AboutSection />

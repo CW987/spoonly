@@ -2,25 +2,15 @@ import UserCard from "@/components/userpage/UserCard";
 import "./userpage.css";
 import UserRecipes from "@/components/userpage/UserRecipes";
 import UserCreations from "@/components/userpage/userCreations";
-import DummyData from "./dummydata";
-import { Card } from "@radix-ui/themes";
 
-import { db } from "@/utils/dbConnection";
-
-export default function UserPage() {
-  // Test
-
-  // Test
-
+export default async function UserPage({ params }) {
+  const brokenParams = await params.id;
   return (
     <div id="UserPageMain">
-      <UserCard />
+      <UserCard params={brokenParams} />
       <div id="UserContent">
-        <UserRecipes />
-        <UserCreations />
-        <Card>
-          <DummyData />
-        </Card>
+        <UserRecipes params={brokenParams} />
+        <UserCreations params={brokenParams} />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function SignedInDropDown() {
   const [open, setOpen] = useState(false);
-  const user = useUser();
+  const { user } = useUser();
   const { signOut } = useClerk();
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
@@ -24,7 +24,7 @@ export default function SignedInDropDown() {
       </DropdownMenu.Trigger>
       <DropdownMenu.Content>
         <DropdownMenu.Item>
-          <Link href={`/user/1`}>Your Profile</Link>
+          <Link href={`/user/${user?.id}`}>Your Profile</Link>
         </DropdownMenu.Item>
         <DropdownMenu.Item>
           <Link href={`/user/1/edit`}>Edit Your Profile</Link>

@@ -16,11 +16,14 @@ Stretch Goals
 🐿️ As a user, I want to be able to search an extensive database of recipes via an API
 🐿️ As a user, I want to be able to view badges and awards for streaks
 
-Wireframe
+⭐ Wireframe
+Canva link: https://www.canva.com/design/DAGgStJ60lk/0Q0luECyRlaByW5NseYJiw/view?utm_content=DAGgStJ60lk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3156ff9d06
 
-Database Schema
+⭐Database Schema
+![Screenshot of database schema in Supabase](image-1.png)
 
-Trello
+⭐Trello
+![Screenshot of working Trello board](image.png)
 
 Reflection
 🎯 What requirements did you achieve?
@@ -29,6 +32,8 @@ Reflection
 
 🎯 If so, what was it that you found difficult about these tasks?
 
-What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
-What errors or bugs did you encounter while completing your assignment? How did you solve them?
-What went really well and what could have gone better?
+🎯What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
+
+🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
+
+🎯What went really well and what could have gone better?
