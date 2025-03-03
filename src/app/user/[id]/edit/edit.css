@@ -1,0 +1,13 @@
+#EditPageMainDiv {
+  grid-area: 2 / 1 / 3 / 6;
+}
+
+#EditPageCard {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.CountryOption {
+  color: black;
+}
