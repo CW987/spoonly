@@ -1,7 +1,14 @@
-"use server";
+import { db } from "@/utils/dbConnection";
 
-import { useUser } from "@clerk/nextjs";
+export default async function UserStuff() {
+  const UserStuffThingsWordsCantThinkGoodLuckHelpMaybe =
+    db.query(`SELECT * FROM user`);
 
-const clerkInfo = await useUser;
-
-export const ClerkUser = { clerkInfo };
+  const UserStuffThingsWordsCantThinkGoodLuckHelpMaybeButNew =
+    UserStuffThingsWordsCantThinkGoodLuckHelpMaybe.rows;
+  return (
+    <>
+      <p></p>
+    </>
+  );
+}

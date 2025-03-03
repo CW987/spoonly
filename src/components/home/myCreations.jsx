@@ -1,6 +1,6 @@
 import { Card, Box, Separator, Heading, Text } from "@radix-ui/themes";
 
-export default function MyCreations() {
+export default function MyCreations({ users }) {
   return (
     <div id="TopRecipes">
       <Box>
