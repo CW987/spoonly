@@ -1,16 +1,30 @@
+"use server";
+
+import { db } from "@/utils/dbConnection";
 import { Avatar, Card, Heading, Separator, Text } from "@radix-ui/themes";
 
-export default function UserCard() {
+export default async function UserCard({ params }) {
+  console.log(params);
+  const userInfo = await db.query(
+    `SELECT * FROM user_data WHERE clerk_id = $1`,
+    [params]
+  );
+  const brokenUserInfo = await userInfo.rows[0];
+  console.log(await brokenUserInfo);
   return (
     <Card id="UserCard">
-      <Heading size="8">Cameron&apos;s Bio</Heading>
+      <Heading size="8">{brokenUserInfo.name}&apos;s Bio</Heading>
       <Separator my="3" size="4"></Separator>
-      <Avatar fallback="Amazing Selfie" size="8"></Avatar>
+      <Avatar
+        fallback="Amazing Selfie"
+        size="8"
+        src={brokenUserInfo.image}
+      ></Avatar>
       <Separator my="3" size="4"></Separator>
       <Heading size="4">About Me</Heading>
-      <Text id="AboutMe">Cameron is amazing</Text>
+      <Text id="AboutMe">{brokenUserInfo.bio}</Text>
       <Separator my="3" size="4"></Separator>
-      <Text>Country: England</Text>
+      <Text>Country: {brokenUserInfo.country}</Text>
     </Card>
   );
 }
