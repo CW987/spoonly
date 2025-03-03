@@ -3,6 +3,7 @@
 // import { currentUser } from "@clerk/nextjs/server";
 import UploadRecipeButton from "@/components/recipe-creation-forms/UploadRecipeButton"
 import UploadCreationButton from "@/components/recipe-creation-forms/UploadCreationButton"
+import "./recipes.css"
 
 export default function AddPostPage(){
 
@@ -18,10 +19,9 @@ export default function AddPostPage(){
     // console.log(email)
 
     return(
-        <div className="grid grid-cols-2 gap-10">
-        <UploadRecipeButton />
+        <div className="flex items-start justify-evenly mt-4" id="UploadButtonsContainer">
+        <UploadRecipeButton/>
         <UploadCreationButton/>
-
         </div>
     )
 }

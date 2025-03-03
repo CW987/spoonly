@@ -1,36 +1,30 @@
-
-
 // import { db } from "@/utils/dbConnection";
+import "@/app/add-post/recipes.css"
 import { SubmitRecipe } from "./SubmitRecipe"
 
 export default function RecipeForm(){
 
-
-
     return (
         <>
-            <form action={SubmitRecipe}>
-            <h1>Add your recipe!</h1>
-                <label htmlFor="cuisine">Cuisine:</label>
-                <br/>
+        <div className="recipeFormContainer bg-green-200 rounded-lg p-4 shadow-xl mt-4">
+            <form action={SubmitRecipe}
+                className="flex flex-col items-stretch ml-4 mr-4 ">
+            <h1 className="text-2xl text-center">Add your recipe!</h1>
+                <label htmlFor="cuisine">Cuisine 🌍:</label>
                 <input
                         className="border-2"
                         type="text"
                         name="cuisine"
                         required/>
-                <br/>
 
-                <label htmlFor="dish_type">Dish Type:</label>
-                <br/>
+                <label htmlFor="dish_type">Dish Type 🍽️:</label>
                 <input
                         className="border-2"
                         type="text"
                         name="dish_type"
                         required/>
-                <br/>
 
-                <label htmlFor="cook_time">Cook Time:</label>
-                <br/>
+                <label htmlFor="cook_time">Cook Time ⏲️:</label>
                 <input
                         className="border-2"
                         type="number"
@@ -38,50 +32,41 @@ export default function RecipeForm(){
                         min={0}
                         required
                         placeholder="(Mins)"/>
-                <br/>
 
-                <label htmlFor="servings">Servings:</label>
-                <br/>
+                <label htmlFor="servings">Servings 🧍‍♀️🧍‍♂️🧍:</label>
                 <input
                         className="border-2"
                         type="number"
                         name="servings"
                         min={0}
                         required/>
-                <br/>
 
-                <label htmlFor="ingredients">Ingredients:</label>
-                <br/>
+                <label htmlFor="ingredients">Ingredients 🍅:</label>
+
                 <textarea
                     className="border-2"
                     type="text"
                     name="ingredients"
                     required>
                 </textarea>
-                <br/>
 
-                <label htmlFor="method">Method:</label>
-                <br/>
+                <label htmlFor="method">Method 🗒️:</label>
                 <textarea
                     className="border-2"
                     type="text"
                     name="method"
                     required>
                 </textarea>
-                <br/>
 
-                <label htmlFor="image">My Recipe Image: </label>
-                <br/>
+
+                <label htmlFor="image">My Recipe Image 📸: </label>
                 <input
                     type="file"
                     name="image"/>
-                <br/>
 
-
-                <br/>
-                <button className="border-2">Submit Recipe!</button>
+                <button>Submit Recipe 🧑‍🍳!</button>
             </form>
-        
+            </div>
         
         </>
     )

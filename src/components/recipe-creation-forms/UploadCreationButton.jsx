@@ -8,8 +8,10 @@ export default function CreationButton(){
 
     return(
         <>
-            <button onClick={()=> setShowForm(!showForm)}>
-                {showForm? "Hide Form" : "Upload Creation!"}
+            <button 
+                className="flex flex-col justify-between rounded-lg bg-green-300 p-4 shadow-xl"
+                onClick={()=> setShowForm(!showForm)}>
+                {showForm? "Hide Creation" : "Upload Creation!"}
             </button>
             {showForm && <CreationForm/>}
         
