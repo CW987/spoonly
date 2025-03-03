@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           <Theme
             id="RadixTheme"
             accentColor="jade"
-            appearance="dark"
+            appearance="light"
             grayColor="mauve"
           >
 
