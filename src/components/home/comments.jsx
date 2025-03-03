@@ -1,15 +1,14 @@
 import { Card, Box, Separator, Heading, Text } from "@radix-ui/themes";
 
-
-export default function CreationsFilters() {
-
+export default function Comments() {
   return (
-    <div id="Filters">
+    <div id="Comments">
       <Box>
         <Card>
-          <Heading>Creations Filters</Heading>
+          <Heading>Comments</Heading>
           <Separator my="3" size="4"></Separator>
-          {/* Filter pane goes here */}
+          {/* Comments Viewer */}
+          {/* Comments Form */}
         </Card>
       </Box>
     </div>
