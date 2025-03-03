@@ -1,13 +1,13 @@
 import { Card, Box, Separator, Heading, Text } from "@radix-ui/themes";
 
-export default function MyCreations() {
+export default function AllRecipes() {
   return (
-    <div id="TopRecipes">
+    <div id="AllRecipes">
       <Box>
         <Card>
-          <Heading>My Creations</Heading>
+          <Heading>Recipes Gallery</Heading>
           <Separator my="3" size="4"></Separator>
-          <Text>Fill in for My Creations</Text>
+          <Text>Fill in for top recipes</Text>
         </Card>
       </Box>
     </div>

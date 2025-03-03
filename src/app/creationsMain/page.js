@@ -1,18 +1,19 @@
-import TopCreations from "@/components/home/topCreations"
-import NewestCreations from "@/components/home/newestCreations"
+import TopCreations from "@/components/home/Creations/topCreations";
+import NewestCreations from "@/components/home/Creations/newestCreations";
+import creationsFilters from "@/components/home/Creations/creationsFilters";
 
-export default function creationsMain(){
-    return(
-        <>
-        <div>
-            <h4>filters</h4>
-        </div>
-        <div>
-            <TopCreations />
-        </div>
-        <div>
+export default function creationsMain() {
+  return (
+    <>
+      <div>
+        <creationsFilters />
+      </div>
+      <div>
+        <TopCreations />
+      </div>
+      <div>
         <NewestCreations />
-        </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
