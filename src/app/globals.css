@@ -39,3 +39,75 @@ body {
     grid-template-rows: 200px 1000px 200px;
   }
 }
+
+/* FORM STYLING */
+
+  .button {
+  background-color: #0d1905;
+  width: 170px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #484e43;
+  color: white;
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 0 10px 10px rgba(0, 7, 2, 0.7);
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(14, 105, 29);
+  border-radius: 50%;
+  background-color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radio-input:checked + .radio-label::before {
+  background-color: rgb(22, 83, 18);
+  border-color: #f8f8f8;
+}
+
+.radio-input:checked + .radio-label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Add hover effect */
+.radio-label:hover::before {
+  border-color: #0056b3;
+}

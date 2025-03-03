@@ -20,7 +20,9 @@ export default async function HomePage() {
       </Flex>
       <div id="TopBoxes">
         {/* <MyCreations /> */}
+
         {/* <p>{CurrentUserInfo.name}</p> */}
+
         <TopRecipes />
         <TopCreations />
         <Leaderboard />
