@@ -5,6 +5,7 @@ import TopRecipes from "@/components/home/Recipes/topRecipes";
 import TopCreations from "@/components/home/Creations/topCreations";
 import Leaderboard from "@/components/home/leaderboard";
 import { db } from "@/utils/dbConnection";
+// import { CurrentUserInfo } from "@/components/clerkInfo/userinfo";
 // import { Accessibility } from 'accessibility';
 
 export default async function HomePage() {
@@ -19,6 +20,9 @@ export default async function HomePage() {
       </Flex>
       <div id="TopBoxes">
         {/* <MyCreations /> */}
+
+        {/* <p>{CurrentUserInfo.name}</p> */}
+
         <TopRecipes />
         <TopCreations />
         <Leaderboard />
@@ -26,4 +30,4 @@ export default async function HomePage() {
       </div>
     </div>
   );
-};
+}

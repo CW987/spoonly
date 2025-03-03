@@ -1,14 +1,13 @@
 import { db } from "@/utils/dbConnection";
 
-export default async function UserStuff() {
-  const UserStuffThingsWordsCantThinkGoodLuckHelpMaybe =
-    db.query(`SELECT * FROM user`);
+import { useUser } from "@clerk/nextjs";
 
-  const UserStuffThingsWordsCantThinkGoodLuckHelpMaybeButNew =
-    UserStuffThingsWordsCantThinkGoodLuckHelpMaybe.rows;
-  return (
-    <>
-      <p></p>
-    </>
-  );
-}
+const { user } = useUser();
+
+const userID = user?.id;
+
+const data = await db.query(`SELECT * FROM user_data WHERE clerk_id = $1`, [
+  userID,
+]);
+
+export const CurrentUserInfo = await data.rows[0];

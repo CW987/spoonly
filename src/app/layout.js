@@ -31,6 +31,7 @@ export const metadata = {
   description: "Gotta eat",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
