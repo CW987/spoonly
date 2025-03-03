@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <Theme id="RadixTheme" accentColor="violet" appearance="dark">
+          <Theme id="RadixTheme" accentColor="violet" appearance="light">
             {children}
             <NavBar />
             <AboutSection />
