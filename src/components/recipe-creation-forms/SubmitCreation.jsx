@@ -4,8 +4,6 @@ import { db } from "@/utils/dbConnection";
 
 export async function SubmitCreation(formValues){
 
-    
-
     const creationFormData = {
         cuisine: formValues.get("cuisine"),
         dishType: formValues.get("dish_type"),
