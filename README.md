@@ -1,5 +1,5 @@
 User Stories
-🐿️ As a user, I want to have a user profile page when logged in, to see all of my activiy (recipes, creations and comments)
+🐿️ As a user, I want to have a user profile page when logged in, to see all of my activity (recipes, creations and comments)
 🐿️ As a user, I want to be able to add the recipe (or a link to) a recipe I make each day in an easy, accessible manner
 🐿️ As a user, I want to be able to add a review and a rating of the recipe
 🐿️ As a user, I want to be able to comment on other people's creations
@@ -33,7 +33,15 @@ Reflection
 🎯 If so, what was it that you found difficult about these tasks?
 
 🎯What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
+Accessibility: https://www.npmjs.com/package/accessibility
+Radix:
 
 🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
 
 🎯What went really well and what could have gone better?
+
+- Discussed a few project ideas and quickly came to a joint decision that we would work on a recipe sharing application
+- Efficient planning on Day 1 meant we could set to work on Day 2
+- Set up Trello, Discord, Git Repo, Supabase early
+- Established the database connection early
+- Set up basic framework for app, which meant we could then start to focus on other areas such as styling

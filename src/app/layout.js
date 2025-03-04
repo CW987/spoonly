@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "@/components/footer/footer";
 
 // Radix
 
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
             {children}
             <NavBar />
             <AboutSection />
+            <Footer />
           </Theme>
         </body>
       </html>
