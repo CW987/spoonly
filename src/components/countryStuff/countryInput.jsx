@@ -16,7 +16,7 @@ export default function CountryInput() {
   }, []);
 
   return (
-    <select className="Input" type="select" required>
+    <select className="Input" type="select" name="country" required>
       <option value="" className="CountryOption">
         -- Select a Country --
       </option>
