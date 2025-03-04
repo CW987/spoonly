@@ -5,7 +5,7 @@ export default function () {
   return (
     <div id="NavBarLinks">
       <Button asChild size="4">
-        <Link className="NavBarLinks" href={`/test`}>
+        <Link className="NavBarLinks" href={`/recipesMain`}>
           Recipes
         </Link>
       </Button>

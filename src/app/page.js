@@ -11,9 +11,9 @@ import { db } from "@/utils/dbConnection";
 // import { Accessibility } from 'accessibility';
 
 export default async function HomePage() {
-  const userStuff = await db.query(`SELECT * FROM user`);
-  const brokenUserStuff = userStuff.rows[0];
-  console.log(brokenUserStuff);
+  // const userStuff = await db.query(`SELECT * FROM user`);
+  // const brokenUserStuff = userStuff.rows[0];
+  // console.log(brokenUserStuff);
 
   return (
     <div id="HomePageMain">
@@ -21,7 +21,7 @@ export default async function HomePage() {
         <Text>Welcome to Spoonly</Text>
       </Flex>
       <div id="TopBoxes">
-        {/* <MyCreations /> */}
+        <MyCreations />
 
         {/* <p>{CurrentUserInfo.name}</p> */}
 

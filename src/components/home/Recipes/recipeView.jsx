@@ -1,13 +1,13 @@
 import { Card, Box, Separator, Heading, Text } from "@radix-ui/themes";
 
-export default function RecipeFilters() {
+export default function RecipeView() {
   return (
-    <div id="Filters">
+    <div id="RecipeView">
       <Box>
         <Card>
-          <Heading>Recipe Filters</Heading>
+          <Heading> {/*Dynamic title goes here*/} </Heading>
           <Separator my="3" size="4"></Separator>
-          {/* Filter pane goes here */}
+          {/* Recipe goes here */}
         </Card>
       </Box>
     </div>
