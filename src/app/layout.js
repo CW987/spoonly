@@ -46,9 +46,10 @@ export default function RootLayout({ children }) {
             grayColor="mauve"
           >
             {children}
+            <AboutSection/>
             <NavBar />
-            <AboutSection />
             <Footer />
+
           </Theme>
         </body>
       </html>
