@@ -1,3 +1,16 @@
+
+export default async function RecipePage({params}){
+    const recipeParams = await params.id;
+    return(
+        <>
+        
+        </>
+    )
+}
+
+
+
+
 // import SimilarCreations from "@/components/home/Creations/similarCreations";
 // import CreationsView from "@/components/home/Creations/creationsView";
 // import Comments from "@/components/home/comments";
