@@ -6,9 +6,9 @@ export default function RecipeForm(){
 
     return (
         <>
-        <div className="recipeFormContainer bg-green-200 rounded-lg p-4 shadow-xl mt-4">
+        <div className="recipeFormContainer p-4 mt-4">
             <form action={SubmitRecipe}
-                className="flex flex-col items-stretch ml-4 mr-4 ">
+                className="flex flex-col items-stretch">
             <h1 className="text-2xl text-center">Add your recipe!</h1>
                 <label htmlFor="cuisine">Cuisine 🌍:</label>
                 <input
@@ -64,7 +64,7 @@ export default function RecipeForm(){
                     type="file"
                     name="image"/>
 
-                <button>Submit Recipe 🧑‍🍳!</button>
+                <button className="formButton">Submit Recipe 🧑‍🍳!</button>
             </form>
             </div>
         
