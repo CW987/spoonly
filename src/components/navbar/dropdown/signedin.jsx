@@ -27,7 +27,7 @@ export default function SignedInDropDown() {
           <Link href={`/user/${user?.id}`}>Your Profile</Link>
         </DropdownMenu.Item>
         <DropdownMenu.Item>
-          <Link href={`/user/1/edit`}>Edit Your Profile</Link>
+          <Link href={`/user/${user?.id}/edit`}>Edit Your Profile</Link>
         </DropdownMenu.Item>
         <DropdownMenu.Separator />
         <DropdownMenu.Item>

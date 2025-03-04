@@ -1,0 +1,12 @@
+.Input,
+.Textarea {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
+  background-color: var(--black-a2);
+  box-shadow: 0 0 0 1px var(--black-a6);
+}

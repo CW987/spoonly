@@ -11,3 +11,5 @@ const data = await db.query(`SELECT * FROM user_data WHERE clerk_id = $1`, [
 ]);
 
 export const CurrentUserInfo = await data.rows[0];
+
+export const CurrentUserID = userID;
