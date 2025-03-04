@@ -10,6 +10,14 @@ export default function RecipeForm(){
             <form action={SubmitRecipe}
                 className="flex flex-col items-stretch">
             <h1 className="text-2xl text-center">Add your recipe!</h1>
+            
+                <label htmlFor="recipe_name">Recipe Name 🍱:</label>
+                <input
+                        className="border-2"
+                        type="text"
+                        name="recipe_name"
+                        required/>
+
                 <label htmlFor="cuisine">Cuisine 🌍:</label>
                 <input
                         className="border-2"
@@ -40,6 +48,16 @@ export default function RecipeForm(){
                         name="servings"
                         min={0}
                         required/>
+
+                <label htmlFor="rating">Rating ⭐️:</label>
+                        <input
+                        className="border-2"
+                        type="number"
+                        name="rating"
+                        min={0}
+                        max={5}
+                        required
+                        />
 
                 <label htmlFor="ingredients">Ingredients 🍅:</label>
 
