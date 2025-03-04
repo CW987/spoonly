@@ -9,7 +9,7 @@ export default function SignedInDropDown() {
   const { signOut } = useClerk();
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
-      <DropdownMenu.Trigger>
+      <DropdownMenu.Trigger style={{ cursor: "pointer" }}>
         <div role="button" id="dropDownTriggerDiv">
           <Avatar
             src={user.imageUrl}
@@ -27,7 +27,7 @@ export default function SignedInDropDown() {
           <Link href={`/user/${user?.id}`}>Your Profile</Link>
         </DropdownMenu.Item>
         <DropdownMenu.Item>
-          <Link href={`/user/1/edit`}>Edit Your Profile</Link>
+          <Link href={`/user/${user?.id}/edit`}>Edit Your Profile</Link>
         </DropdownMenu.Item>
         <DropdownMenu.Separator />
         <DropdownMenu.Item>

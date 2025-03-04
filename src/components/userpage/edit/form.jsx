@@ -3,11 +3,26 @@
 import { Form } from "radix-ui";
 import { Button } from "@radix-ui/themes";
 import CountryInput from "@/components/countryStuff/countryInput";
+import "./edit.css";
+import editUserSubmit from "./editUserSubmit";
+import { useUser } from "@clerk/nextjs";
 
 export default function EditUserForm() {
+  const { user } = useUser();
+
+  const userID = user?.id;
   return (
-    <Form.Root className="FormRoot" id="EditForm">
-      <Form.Field className="FormField" name="username">
+    // <form onSubmit={editUserSubmit}>
+    //   <input type="text" name="name"></input>
+    //   <input type="email" name="email"></input>
+    //   <input type="text" name="country"></input>
+    //   <input type="text" name="bio"></input>
+    //   <button type="submit">Submit</button>
+    // </form>
+
+    <Form.Root className="FormRoot" id="EditForm" action={editUserSubmit}>
+      <input type="hidden" name="clerk_id" value={userID} />
+      <Form.Field className="FormField" name="name">
         <div
           style={{
             display: "flex",
@@ -24,7 +39,7 @@ export default function EditUserForm() {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <input className="Input" type="text" required />
+          <input className="Input" type="text" name="name" required />
         </Form.Control>
       </Form.Field>
       <Form.Field className="FormField" name="email">
@@ -44,10 +59,10 @@ export default function EditUserForm() {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <input className="FormInput" type="email" required />
+          <input className="Input" type="email" name="email" required />
         </Form.Control>
       </Form.Field>
-      <Form.Field className="FormField" name="bio">
+      <Form.Field className="FormField">
         <div
           style={{
             display: "flex",
@@ -61,7 +76,7 @@ export default function EditUserForm() {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <textarea className="Textarea" required />
+          <textarea className="Textarea" name="bio" required />
         </Form.Control>
       </Form.Field>
       <Form.Field className="FormField" name="country">
@@ -81,8 +96,25 @@ export default function EditUserForm() {
           <CountryInput />
         </Form.Control>
       </Form.Field>
+      <Form.Field className="FormField" name="country">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+          }}
+        >
+          <Form.Label className="FormLabel">Country</Form.Label>
+          <Form.Message className="FormMessage" match="valueMissing">
+            Please enter your bio
+          </Form.Message>
+        </div>
+        <Form.Control asChild>
+          <input type="file"></input>
+        </Form.Control>
+      </Form.Field>
       <Form.Submit asChild>
-        <Button className="Button" style={{ marginTop: 10 }}>
+        <Button className="Button" type="submit" style={{ marginTop: 10 }}>
           Post question
         </Button>
       </Form.Submit>
