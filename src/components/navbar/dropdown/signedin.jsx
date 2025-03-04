@@ -9,7 +9,7 @@ export default function SignedInDropDown() {
   const { signOut } = useClerk();
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
-      <DropdownMenu.Trigger>
+      <DropdownMenu.Trigger style={{ cursor: "pointer" }}>
         <div role="button" id="dropDownTriggerDiv">
           <Avatar
             src={user.imageUrl}
