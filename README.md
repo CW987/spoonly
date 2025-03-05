@@ -1,3 +1,5 @@
+Week 12 - Final Group Project - Spoonly
+
 User Stories
 🐿️ As a user, I want to have a user profile page when logged in, to see all of my activity (recipes, creations and comments)
 🐿️ As a user, I want to be able to add the recipe (or a link to) a recipe I make each day in an easy, accessible manner
@@ -25,6 +27,10 @@ Canva link: https://www.canva.com/design/DAGgStJ60lk/0Q0luECyRlaByW5NseYJiw/view
 ⭐Trello
 ![Screenshot of working Trello board](image.png)
 
+Instructions for setting up the project on a local machine
+Step 1:
+Step 2:
+
 Reflection
 🎯 What requirements did you achieve?
 
@@ -34,9 +40,13 @@ Reflection
 
 🎯What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
 Accessibility: https://www.npmjs.com/package/accessibility
-Radix:
+Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
 
 🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
+
+- Slow hardware
+- Difficulties implementing an API
+- 
 
 🎯What went really well and what could have gone better?
 

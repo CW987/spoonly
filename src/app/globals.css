@@ -18,7 +18,14 @@
   }
 }
 
+/* global.css */
+
 body {
+  background-image: url("/root/TechEducatorProjects/week12/spoonly/public/bread_background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
