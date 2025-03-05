@@ -42,6 +42,14 @@ Radix:
 
 - Discussed a few project ideas and quickly came to a joint decision that we would work on a recipe sharing application
 - Efficient planning on Day 1 meant we could set to work on Day 2
-- Set up Trello, Discord, Git Repo, Supabase early
+- Set up Wireframe, Trello, Discord, Git Repo, Supabase early
 - Established the database connection early
 - Set up basic framework for app, which meant we could then start to focus on other areas such as styling
+
+---
+
+PIVOT!
+
+- On Tuesday afternoon, we realised that the structure of our pages wasn't overly intuitive and came together as a group to refine this. Although it did mean going over some work, much of the functionality already existed and we were able to make the page much more user-friendly (e.g. removing the seperate 'Add Post' page and instead having a button on the Recipes and Creation pages).
+
+---
