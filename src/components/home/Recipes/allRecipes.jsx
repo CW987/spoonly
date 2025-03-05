@@ -20,7 +20,9 @@ export default async function AllRecipes() {
 
   return (
     <div id="allRecipes">
+
       {wrangledRecipes.map((recipe) => (
+
         <div className="recipeBoxContainer" key={recipe.recipe_id}>
           <Link href={`/recipes/${recipe.recipe_id}`}>
             <Box className="recipeBox" maxWidth="400px">
@@ -46,7 +48,10 @@ export default async function AllRecipes() {
               </Card>
             </Box>
           </Link>
+
+
         </div>
+
       ))}
     </div>
   );

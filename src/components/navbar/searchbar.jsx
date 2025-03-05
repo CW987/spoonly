@@ -1,6 +1,7 @@
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { TextField } from "@radix-ui/themes";
 
+
 export default function SearchBar() {
   return (
     <div id="NavSearch">
