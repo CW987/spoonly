@@ -1,29 +1,28 @@
-import {
-  Card,
-  Box,
-  Separator,
-  Heading,
-  Text,
-  Inset,
-  Strong,
-} from "@radix-ui/themes";
-import "../../../app/recipes/recipe.css";
+"use server";
+
 import { db } from "@/utils/dbConnection";
+
 import Link from "next/link";
+import { Card, Box, Text, Inset, Strong } from "@radix-ui/themes";
 
-export default async function AllRecipes() {
-  const recipes = await db.query(`SELECT * FROM recipes`);
-  console.log(recipes);
+export default async function TopRecipesData() {
+  const creations = await db.query(
+    `SELECT *
+    FROM recipes
+    ORDER BY rating
+    LIMIT 5;`
+  );
 
-  const wrangledRecipes = recipes.rows;
-  console.log(wrangledRecipes);
+  const brokenCreeations = creations.rows;
+
+  console.log(brokenCreeations);
 
   return (
-    <div id="allRecipes">
-      {wrangledRecipes.map((recipe) => (
+    <div>
+      {brokenCreeations.map((recipe) => (
         <div className="recipeBoxContainer" key={recipe.recipe_id}>
           <Link href={`/recipes/${recipe.recipe_id}`}>
-            <Box className="recipeBox" maxWidth="400px">
+            <Box className="recipeBox" maxWidth="500px">
               <Card className="recipe" size="2">
                 <Inset clip="padding-box" side="top" pb="current">
                   <img

@@ -21,7 +21,7 @@
 /* global.css */
 
 body {
-  background-image: url("/root/TechEducatorProjects/week12/spoonly/public/bread_background.jpg"); 
+  background-image: url("/root/TechEducatorProjects/week12/spoonly/public/bread_background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
   #RadixTheme {
     display: grid;
     grid-template-columns: 2fr 2fr 8fr 2fr 2fr;
-    grid-template-rows: 200px 800px 200px;
+    grid-template-rows: 2fr 8fr 2fr;
   }
 }
 
@@ -49,7 +49,7 @@ body {
 
 /* FORM STYLING */
 
-  .button {
+.button {
   background-color: #0d1905;
   width: 170px;
   border: none;

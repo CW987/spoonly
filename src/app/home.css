@@ -9,6 +9,10 @@
   grid-area: 2 / 2 / 3 / 5;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
 }
 
+.HomeCardsSort {
+  display: flex;
+  flex-wrap: column;
+}
