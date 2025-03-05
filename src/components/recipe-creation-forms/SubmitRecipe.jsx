@@ -2,6 +2,8 @@
 
 import { db } from "@/utils/dbConnection";
 import { auth } from '@clerk/nextjs/server';
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 export async function SubmitRecipe(formValues){
 
@@ -30,4 +32,7 @@ export async function SubmitRecipe(formValues){
         (user_id, recipe_name, cuisine, dish_type, cook_time, servings, rating, ingredients, method, image) 
         VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`, 
         [finalUser, recipeFormData.recipeName, recipeFormData.cuisine, recipeFormData.dishType, recipeFormData.cookTime, recipeFormData.servings, recipeFormData.rating, recipeFormData.ingredients, recipeFormData.method, recipeFormData.recipeImage])
+
+    revalidatePath("/recipes")
+    redirect("/recipes")
 }

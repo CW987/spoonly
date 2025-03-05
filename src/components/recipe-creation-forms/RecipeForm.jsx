@@ -1,7 +1,5 @@
 // import { db } from "@/utils/dbConnection";
-import "@/app/add-post/recipes.css"
 import { SubmitRecipe } from "./SubmitRecipe"
-import "../../app/recipesMain/recipe.css"
 
 
 export default function RecipeForm(){
