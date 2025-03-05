@@ -1,10 +1,13 @@
 import { Form } from "radix-ui";
 import { SubmitRecipeComment } from "./SubmitRecipeComment";
 
+
+
 export default function RecipeCommentsForm(props) {
   console.log(props);
   const recipeId = props;
   console.log(recipeId);
+
   return (
     <Form.Root action={SubmitRecipeComment} className="recipeCommentsForm">
       <input type="hidden" value={recipeId} name="recipeId"></input>
