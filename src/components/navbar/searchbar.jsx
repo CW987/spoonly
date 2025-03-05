@@ -1,10 +1,6 @@
-"use client";
-
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { TextField } from "@radix-ui/themes";
-// import React, { useState } from "react";
-// import { db } from "@/utils/dbConnection";
-// import searchRecipes from "../search/recipeSearch";
+
 
 export default function SearchBar() {
   return (
