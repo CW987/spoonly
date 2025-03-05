@@ -3,26 +3,22 @@ import NewestCreations from "@/components/home/Creations/newestCreations";
 import CreationsFilters from "@/components/home/Creations/creationsFilters";
 import Link from "next/link";
 import "./creation.css"
+import AllCreations from "@/components/home/Creations/allCreations";
 
 export default function creationsMain() {
   return (
     <>
-      <div
-        className="creationsLinkContainer">
+      <div className="creationsLinkContainer">
         <Link 
             className="creationsLink"   
             href={"/creationsMain/add-creation"}>Add your own creation!
         </Link>
           <div className="creationsFilter">
-          <CreationsFilters />
+            <CreationsFilters />
           </div>
-        </div>
-      <div>
-        <TopCreations />
       </div>
-      <div>
-        <NewestCreations />
-      </div>
+
+        <AllCreations/>
     </>
   );
 }
