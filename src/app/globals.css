@@ -18,6 +18,10 @@
   }
 }
 
+.backgroundImage {
+  background-image: url('/public/vecteezy_organic-vegetable-wreath-on-transparent-background_56253330.png');
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
