@@ -31,6 +31,7 @@ export async function SubmitRecipeComment(formValues) {
   db.query(
     `INSERT INTO recipe_comments (comment_content, recipe_id, user_id) 
         VALUES($1, $2, $3)`,
+
     [recipeCommentData, recipeId, finalUser]
   );
 
