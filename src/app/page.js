@@ -1,14 +1,10 @@
 import { Flex, Text, Button } from "@radix-ui/themes";
 import "./home.css";
-import TopRecipes from "@/components/home/Recipes/topRecipes";
+import TopRecipes from "@/components/home/HomePage/topRecipes";
+import MyCreations from "@/components/home/HomePage/myCreations";
+import TopCreations from "@/components/home/HomePage/topCreations";
 
-import MyCreations from "@/components/home/Creations/myCreations";
-
-import TopCreations from "@/components/home/Creations/topCreations";
-import Leaderboard from "@/components/home/leaderboard";
-import { db } from "@/utils/dbConnection";
-// import { CurrentUserInfo } from "@/components/clerkInfo/userinfo";
-// import { Accessibility } from 'accessibility';
+// import { CurrentUserInfo } from "@/components/clerkInfo/userinfo";// import { Accessibility } from 'accessibility';
 
 export default async function HomePage() {
   // const userStuff = await db.query(`SELECT * FROM user`);
@@ -22,12 +18,8 @@ export default async function HomePage() {
       </Flex>
       <div id="TopBoxes">
         <MyCreations />
-
-        {/* <p>{CurrentUserInfo.name}</p> */}
-
         <TopRecipes />
         <TopCreations />
-        <Leaderboard />
         {/* <Accessibility /> */}
       </div>
     </div>

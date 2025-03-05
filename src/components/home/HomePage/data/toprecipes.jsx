@@ -1,23 +1,25 @@
 "use server";
 
 import { db } from "@/utils/dbConnection";
+
 import Link from "next/link";
 import { Card, Box, Text, Inset, Strong } from "@radix-ui/themes";
 
-export default async function UserRecipeCards({ params }) {
+export default async function TopRecipesData() {
   const creations = await db.query(
-    `SELECT r.*
-    FROM recipes r
-    JOIN user_data u ON r.user_id = u.user_id
-    WHERE u.clerk_id = $1
-    ORDER BY r.date_created DESC
-    LIMIT 5;`,
-    [await params]
+    `SELECT *
+    FROM recipes
+    ORDER BY rating
+    LIMIT 5;`
   );
-  const wrangledCreations = creations.rows;
+
+  const brokenCreeations = creations.rows;
+
+  console.log(brokenCreeations);
+
   return (
     <div>
-      {wrangledCreations.map((recipe) => (
+      {brokenCreeations.map((recipe) => (
         <div className="recipeBoxContainer" key={recipe.recipe_id}>
           <Link href={`/recipes/${recipe.recipe_id}`}>
             <Box className="recipeBox" maxWidth="500px">
