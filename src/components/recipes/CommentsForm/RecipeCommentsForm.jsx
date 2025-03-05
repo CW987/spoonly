@@ -4,8 +4,7 @@ import { SubmitRecipeComment } from "./SubmitRecipeComment";
 
 
 export default function RecipeCommentsForm(props) {
-  console.log(props);
-  const recipeId = props;
+  const recipeId = props.paramId;
   console.log(recipeId);
 
   return (
