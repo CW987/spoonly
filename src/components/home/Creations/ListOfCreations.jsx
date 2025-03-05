@@ -17,7 +17,7 @@ export default async function ListOfCreations(){
                         <p>Cuisine: {item.cuisine}</p>
                         <p>Dish Type: {item.dish_type}</p>
                         <p>Content: {item.post_content}</p>
-                        <p>Do you recommend this? {item.recommended}</p>
+                        <p>Do you recommend this? {item.recommend}</p>
                         <p>Rating: {item.rating}</p>
                         </Link>
                     </div>
