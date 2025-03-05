@@ -1,6 +1,8 @@
 // import { db } from "@/utils/dbConnection";
 import "@/app/add-post/recipes.css"
 import { SubmitRecipe } from "./SubmitRecipe"
+import "../../app/recipesMain/recipe.css"
+
 
 export default function RecipeForm(){
 
@@ -9,29 +11,36 @@ export default function RecipeForm(){
         <div className="recipeFormContainer p-4 mt-4">
             <form action={SubmitRecipe}
                 className="flex flex-col items-stretch">
-            <h1 className="text-2xl text-center">Add your recipe!</h1>
             
-                <label htmlFor="recipe_name">Recipe Name 🍱:</label>
+                <label className="text-center" htmlFor="recipe_name">Recipe Name 🍱:</label>
                 <input
-                        className="border-2"
+                        className="border-2 text-center"
                         type="text"
                         name="recipe_name"
                         required/>
 
+                <div className="dish-cuisine">
+                    <div className="cuisine">
                 <label htmlFor="cuisine">Cuisine 🌍:</label>
                 <input
                         className="border-2"
                         type="text"
                         name="cuisine"
                         required/>
+                        </div>
 
+                <div>
                 <label htmlFor="dish_type">Dish Type 🍽️:</label>
                 <input
                         className="border-2"
                         type="text"
                         name="dish_type"
                         required/>
+                </div>
+                </div>
 
+                <div className="time-servings">
+                <div>
                 <label htmlFor="cook_time">Cook Time ⏲️:</label>
                 <input
                         className="border-2"
@@ -40,7 +49,9 @@ export default function RecipeForm(){
                         min={0}
                         required
                         placeholder="(Mins)"/>
+                </div>
 
+                <div>
                 <label htmlFor="servings">Servings 🧍‍♀️🧍‍♂️🧍:</label>
                 <input
                         className="border-2"
@@ -48,8 +59,10 @@ export default function RecipeForm(){
                         name="servings"
                         min={0}
                         required/>
+                </div>
 
-                <label htmlFor="rating">Rating ⭐️:</label>
+                <div>
+                <label htmlFor="rating">Rating out of 5 ⭐️:</label>
                         <input
                         className="border-2"
                         type="number"
@@ -58,6 +71,8 @@ export default function RecipeForm(){
                         max={5}
                         required
                         />
+                </div>
+                </div>
 
                 <label htmlFor="ingredients">Ingredients 🍅:</label>
 
@@ -76,11 +91,13 @@ export default function RecipeForm(){
                     required>
                 </textarea>
 
-
+                <div className="recipeImg">
                 <label htmlFor="image">My Recipe Image 📸: </label>
                 <input
+                    className="img"
                     type="file"
                     name="image"/>
+                </div>
 
                 <button className="formButton">Submit Recipe 🧑‍🍳!</button>
             </form>

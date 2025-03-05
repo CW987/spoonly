@@ -2,20 +2,26 @@ import * as React from "react";
 import * as Form from "@radix-ui/react-form";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import { SubmitCreation } from "./SubmitCreation";
+import "../../app/creationsMain/creation.css"
 
 export default function CreationForm() {
   
   return (
     <>
-      <div className="recipeFormContainer p-4 mt-4">
+      <div className="creationFormContainer p-4 mt-4">
       <form action={SubmitCreation} className="flex flex-col items-stretch">
-        <h1 className="text-2xl text-center">Add your creation! </h1>
 
+      <div className="cuisine-dish">
+        <div>
         <label htmlFor="cuisine">Cuisine 🌍:</label>
         <input className="border-2" type="text" name="cuisine" required />
+        </div>
 
+        <div>
         <label htmlFor="dish_type">Dish Type 🍽️:</label>
         <input className="border-2" type="text" name="dish_type" required />
+        </div>
+        </div>
 
         <label htmlFor="post_content">Content 📝:</label>
         <textarea
@@ -50,6 +56,8 @@ export default function CreationForm() {
             No
           </label>
 
+        <div className="rating-img">
+          <div>
         <label htmlFor="rating">Rating ⭐️:</label>
         <input
           className="border-2"
@@ -59,9 +67,13 @@ export default function CreationForm() {
           max={5}
           required
         />
+        </div>
 
+        <div className="creationImg">
         <label htmlFor="image">My Creation Image 📸: </label>
-        <input type="file" name="image" />
+        <input className="img" type="file" name="image" />
+        </div>
+        </div>
 
         <button className="formButton">Submit Creation!</button>
         {/* <button className="border-2">Submit Creation!</button> */}

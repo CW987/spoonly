@@ -49,61 +49,8 @@
 	position: relative;
 }
 
-.recipeFormContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    /* height: auto; */
-    border-radius: 20px;
-    background: #D2FF72;
-    box-shadow:  0px 8px 8px #000000;
-}
 
-.creationFormContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    /* height: auto; */
-    border-radius: 20px;
-    background: #D2FF72;
-    box-shadow:  0px 8px 8px #000000;
-}
 
-label{
-    font-size: large;
-    padding-top: 7px;
-}
 
-input{
-    border-radius: 5px;
-    padding: 3px;
-}
 
-textarea{
-    border-radius: 5px;
-    height: 150px;
-    padding: 3px;
-}
-p{
-    font-size: larger;
-    padding: 5px;
-}
-
-.formButton{
-    background-color: #15B392;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: larger;
-}
-
-.formButton:hover{
-	background-color: #73EC8B;
-}
 
