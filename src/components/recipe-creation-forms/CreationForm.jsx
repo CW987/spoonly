@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Form from "@radix-ui/react-form";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import { SubmitCreation } from "./SubmitCreation";
-import "../../app/creationsMain/creation.css"
+import "../../app/creations/creation.css"
 
 export default function CreationForm() {
   

@@ -17,7 +17,7 @@ export default function () {
         </Link>
       </Button>
       <Button asChild size="4">
-        <Link className="NavBarLinks" href={`/creationsMain`}>
+        <Link className="NavBarLinks" href={`/creations`}>
           Creations
         </Link>
       </Button>
