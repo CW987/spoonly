@@ -2,15 +2,14 @@
 
 import { db } from "@/utils/dbConnection";
 import { Avatar, Card, Heading, Separator, Text } from "@radix-ui/themes";
+import ImageTest from "./imagetest";
 
 export default async function UserCard({ params }) {
-  console.log(params);
   const userInfo = await db.query(
     `SELECT * FROM user_data WHERE clerk_id = $1`,
     [params]
   );
   const brokenUserInfo = await userInfo.rows[0];
-  console.log(await brokenUserInfo);
   return (
     <Card id="UserCard">
       <Heading size="8">{brokenUserInfo.name}&apos;s Bio</Heading>
