@@ -9,8 +9,8 @@ export default async function UpdateRecipe({ params }) {
     console.log(updateParams)
     console.log(updateParams.id)
 
-    const oneRecipe= await db.query(`SELECT * FROM recipes WHERE recipe_id = $1`, [
-    updateParams.id]);
+    const oneRecipe= await db.query(`SELECT * FROM recipes WHERE recipe_id = $1`, 
+        [updateParams.id]);
     console.log(oneRecipe);
 
   const wrangledRecipe = oneRecipe.rows[0];
@@ -56,13 +56,13 @@ export default async function UpdateRecipe({ params }) {
         <div className="">
                 <form action={handleUpdate} className="flex flex-col items-stretch uFormContainer">
         
-                <label htmlFor="creation_name" className="text-center font-bold text-xl">Creation Name: </label>
+                <label htmlFor="recipe_name" className="text-center font-bold text-xl">Recipe Name: </label>
                 <input 
                 className=" text-center border-2 p-2 rounded-sm" 
                 type="text" 
-                name="creation_name" 
+                name="recipe_name" 
                 required
-                defaultValue={wrangledCreation.creation_name} />
+                defaultValue={wrangledRecipe.recipe_name}/>
         
                 <div className="cuisine-dish">
                 <div>
@@ -72,7 +72,7 @@ export default async function UpdateRecipe({ params }) {
                     type="text" 
                     name="cuisine" 
                     required 
-                    defaultValue={wrangledCreation.cuisine} />
+                    defaultValue={wrangledRecipe.cuisine} />
                 </div>
         
                 <div>
@@ -82,68 +82,74 @@ export default async function UpdateRecipe({ params }) {
                     type="text" 
                     name="dish_type" 
                     required 
-                    defaultValue={wrangledCreation.dish_type} />
+                    defaultValue={wrangledRecipe.dish_type} />
                 </div>
                 </div>
-        
-                <label className="font-bold text-xl" htmlFor="post_content">Content 📝:</label>
+
+
+                <div className="time-servings">
+                    <div>
+                    <label className="font-bold text-xl" htmlFor="cook_time">Cook Time ⏲️:</label>
+                    <input
+                            className="border-2 p-2 rounded-sm"
+                            type="number"
+                            name="cook_time"
+                            min={0}
+                            required
+                            placeholder="(Mins)"
+                            defaultValue={wrangledRecipe.cook_time}/>
+                    </div>
+
+                <div>
+                    <label className="font-bold text-xl" htmlFor="servings">Servings 🧍‍♀️🧍‍♂️🧍:</label>
+                    <input
+                            className="border-2 p-2 rounded-sm"
+                            type="number"
+                            name="servings"
+                            min={0}
+                            required
+                            defaultValue={wrangledRecipe.servings}/>
+                </div>
+
+                <div>
+                <label className="font-bold text-xl" htmlFor="rating">Rating out of 5 ⭐️:</label>
+                        <input
+                        className="border-2 p-2 rounded-sm"
+                        type="number"
+                        name="rating"
+                        min={0}
+                        max={5}
+                        required
+                        defaultValue={wrangledRecipe.rating}
+                        />
+                </div>
+                </div>
+
+                <label className="font-bold text-xl" htmlFor="ingredients">Ingredients 🍅:</label>
                 <textarea
                     className="border-2 p-2 rounded-sm"
                     type="text"
-                    name="post_content"
+                    name="ingredients"
                     required
-                    defaultValue={wrangledCreation.post_content} 
-                ></textarea>
-        
-                <p className="font-bold">Would you recommend this for others 👍/👎? </p>
-                <label 
-                htmlFor="recommend"
-                className="flex items-center gap-2 font-bold text-xl">
-                    <input 
-                    type="radio" 
-                    name="recommend" 
-                    value="true" 
-                    className="w-4 h-4 " 
-                    required 
-                    defaultChecked={wrangledCreation.recommend === true} />
-                    Yes
-                    </label>
-        
-                    <label 
-                    htmlFor="recommend"
-                    className="flex items-center gap-2 font-bold text-xl">
-                    <input 
-                    type="radio" 
-                    name="recommend" 
-                    value="false" 
-                    className="w-4 h-4" 
-                    required 
-                    defaultChecked={wrangledCreation.recommend === false}  />
-                    No
-                    </label>
-        
-                <div className="rating-img">
-                    <div>
-                <label className="font-bold text-xl" htmlFor="rating">Rating ⭐️:</label>
-                <input
+                    defaultValue={wrangledRecipe.ingredients}>
+                </textarea>
+
+                <label className="font-bold text-xl" htmlFor="method">Method 🗒️:</label>
+                <textarea
                     className="border-2 p-2 rounded-sm"
-                    type="number"
-                    name="rating"
-                    min={0}
-                    max={5}
+                    type="text"
+                    name="method"
                     required
-                    defaultValue={wrangledCreation.rating} 
-                />
-                </div>
-        
-                <div className="creationImg">
-                    <label className="font-bold text-xl" htmlFor="image">My Creation Image 📸: </label>
-                    <input 
-                    className="img" 
-                    type="file" 
-                    name="image" 
-                    accept="image/*" />
-                </div>
+                    defaultValue={wrangledRecipe.method}>
+                </textarea>
+
+                <div className="recipeImg">
+                <label className="font-bold text-xl" htmlFor="image">My Recipe Image 📸: </label>
+                <input
+                    className="img"
+                    type="file"
+                    name="image"
+                    accept="image/*"/>
                 </div>
         
                 <button className="formButton font-bold text-xl">Update Creation!</button>

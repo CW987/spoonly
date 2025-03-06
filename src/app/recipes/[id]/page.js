@@ -52,10 +52,10 @@ export default async function RecipePage({ params }) {
                 </div>
 
                 <div className="updateLink">
-                {/* <Link
-                    href={`/creations/${creationParams.id}/update-creation`}>
+                <Link
+                    href={`/recipes/${recipeParams.id}/update-recipe`}>
                     Update creation
-                </Link> */}
+                </Link>
                 </div>
             </div>
     </>
