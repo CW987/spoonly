@@ -5,7 +5,7 @@ import MyCreations from "@/components/home/HomePage/myCreations";
 import TopCreations from "@/components/home/HomePage/topCreations";
 import { SignedIn } from "@clerk/nextjs";
 
-// import { CurrentUserInfo } from "@/components/clerkInfo/userinfo";// import { Accessibility } from 'accessibility';
+// import { CurrentUserInfo } from "@/components/clerkInfo/userinfo";
 
 export default function HomePage() {
   // const userStuff = await db.query(`SELECT * FROM user`);
@@ -21,7 +21,6 @@ export default function HomePage() {
         </SignedIn>
         <TopRecipes />
         <TopCreations />
-        {/* <Accessibility /> */}
       </div>
     </div>
   );

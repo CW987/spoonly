@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { SignedIn } from "@clerk/nextjs";
+import EditRecipePic from "@/components/recipes/individualPages/EditPicture";
 
 export default async function RecipePage({ params }) {
   const recipeParams = await params;
@@ -36,6 +37,7 @@ export default async function RecipePage({ params }) {
       <div className="wholeRecipePage">
       <div className="myRecipePage">
         <RecipeInfo params={paramsId} />
+        <EditRecipePic params={paramsId} />
         <SignedIn>
           <RecipeCommentsForm paramId={paramsId} />
         </SignedIn>

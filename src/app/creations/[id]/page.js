@@ -5,6 +5,7 @@ import CreationComments from "@/components/CreationComments/CreationComments";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import EditCreationsPic from "@/components/creations/individualPages/EditCreationsPicture";
 
 export default async function CreationIDPage({params}){
 
@@ -62,3 +63,4 @@ export default async function CreationIDPage({params}){
         </>
     )
 }
+
