@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { SignedIn } from "@clerk/nextjs";
+import EditRecipePic from "@/components/recipes/individualPages/EditPicture";
 
 export default async function RecipePage({ params }) {
   const recipeParams = await params;
@@ -35,6 +36,7 @@ export default async function RecipePage({ params }) {
     <>
       <div className="myRecipePage">
         <RecipeInfo params={paramsId} />
+        <EditRecipePic params={paramsId} />
         <SignedIn>
           <RecipeCommentsForm paramId={paramsId} />
         </SignedIn>
@@ -49,22 +51,18 @@ export default async function RecipePage({ params }) {
       </div>
 
       <div className="buttons">
+        <div className="deleteRecipe">
+          <form action={handleDeleteRecipe}>
+            <button type="submit">Delete this recipe</button>
+          </form>
+        </div>
 
-                <div className="deleteRecipe">
-                    <form action={handleDeleteRecipe}>
-                        <button
-                            type="submit">
-                                Delete this recipe</button>
-                    </form>
-                </div>
-
-                <div className="updateLink">
-                <Link
-                    href={`/recipes/${recipeParams.id}/update-recipe`}>
-                    Update creation
-                </Link>
-                </div>
-            </div>
+        <div className="updateLink">
+          <Link href={`/recipes/${recipeParams.id}/update-recipe`}>
+            Update creation
+          </Link>
+        </div>
+      </div>
     </>
   );
 }
