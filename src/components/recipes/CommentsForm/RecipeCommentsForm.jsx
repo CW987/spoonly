@@ -1,8 +1,6 @@
 import { Form } from "radix-ui";
 import { SubmitRecipeComment } from "./SubmitRecipeComment";
 
-
-
 export default function RecipeCommentsForm(props) {
   const recipeId = props.paramId;
   console.log(recipeId);
@@ -10,7 +8,7 @@ export default function RecipeCommentsForm(props) {
   return (
     <Form.Root action={SubmitRecipeComment} className="recipeCommentsForm">
       <input type="hidden" value={recipeId} name="recipeId"></input>
-      <Form.Field className="FormField" name="comment_content">
+      <Form.Field className="RecipeFormField" name="comment_content">
         <div>
           <Form.Label className="FormLabel">Your Comment:</Form.Label>
 
@@ -19,12 +17,12 @@ export default function RecipeCommentsForm(props) {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <input type="text" required />
+          <input className="bg-white w-3xl p-2" type="text" required />
         </Form.Control>
       </Form.Field>
 
       <Form.Submit asChild>
-        <button className="Button">Post comment</button>
+        <button className="Button bg-pink-300 m-2 p-4">Post comment</button>
       </Form.Submit>
     </Form.Root>
   );

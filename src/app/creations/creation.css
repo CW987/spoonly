@@ -44,8 +44,13 @@
     align-items: stretch;
     border-radius: 20px;
     background: #77DD77;
-    box-shadow:  0px 8px 8px #000000;
+    box-shadow:  0px 2px 2px #aea6a6;
 }
+
+/* .name{
+    display: flex;
+    flex-direction: ;
+} */
 
 .cuisine-dish{
     display: flex;
@@ -93,3 +98,190 @@ p{
     justify-content: start;
     align-items: start;
 }
+
+.creationBoxContainer{
+    display: inline-block;
+}
+
+.creationBox{
+    display: flex;
+    padding: 10px;
+}
+
+.creationCard{
+    width: 340px;
+    height: 300px;
+}
+
+.ptext{
+    font-size: 1rem;
+}
+
+/* ==================================== A creation ========================== */
+
+.myCreationPage{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.creation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: start; */
+    background-color: #FF8989;
+    border-radius: 10px;
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow:  0px 2px 2px #aea6a6;
+}
+
+.heading{
+    font-size: 2rem;
+}
+
+/* ================================= creation comment form ===================== */
+
+.creationCommentsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: end; */
+    background-color: greenyellow;
+    /* border-radius: 10px; */
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow:  0px 2px 2px #aea6a6;
+}
+
+/*  ============================ Comment =========================== */
+
+.commentContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+    width: 100%;
+    /* height: max-content; */
+    margin-top: 10px;
+}
+.comment{
+    box-shadow:  0px 2px 2px #aea6a6;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.buttons{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: end; */
+    padding: 10px;
+    height: max-content ;
+    width: max-content;
+    margin-top: 10px;
+}
+
+.deleteCreation{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    height: max-content ;
+    width: max-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow:  0px 2px 2px #aea6a6;
+}
+
+.deleteCreation:hover{
+    background-color: rgb(7, 10, 13);
+}
+
+.updateLink{
+    background-color: rgb(176, 30, 255);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    height: max-content ;
+    width: max-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow:  0px 2px 2px #aea6a6;
+}
+
+.updateLink:hover{
+    background-color: #FEA6FF;
+}
+/* =========================== update creation page ==================== */
+
+.updateForm{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.uFormContainer{
+    background-color: chartreuse;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow:  0px 2px 2px #aea6a6;
+}
+
+.formButton{
+    background-color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:  0px 2px 2px #aea6a6;;
+    width: max-content;;
+}
+
+.formButton:hover{
+    background-color: rgb(58, 217, 223);
+}
+
+
+.backLink{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    height: max-content ;
+    width: max-content;
+    background-color: slateblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow:  0px 2px 2px #aea6a6;;
+}
+
+.backLink:hover{
+    background-color: rgb(30, 19, 99);
+}
+

@@ -10,7 +10,7 @@ export default function () {
         </Link>
       </Button>
       <Button size="4" className="NavBarButtons">
-        <Link className="NavBarLinks" href={`/creationsMain`}>
+        <Link className="NavBarLinks" href={`/creations`}>
           Creations
         </Link>
       </Button>
