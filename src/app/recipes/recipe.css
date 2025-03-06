@@ -1,7 +1,18 @@
-.recipeLinkContainer{
-    /* display: flex; */
+.recipeContainer{
+    display: flex;
     flex-direction: column;
-    align-items: start;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.recipeLinkContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -11,25 +22,24 @@
 .recipeLink{
     display: flex;
     flex-direction: column;
-    background-color: #FEA6FF;
+    background-color: #5fdda0;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    width: max-content;
+    box-shadow:  0px 2px 2px #aea6a6;
+    color: white;
+    font-weight: bold;
 }
 
 .recipeFilter{
     margin: 10px;
+    width: 100%;
+    box-shadow:  0px 2px 2px #aea6a6;
 }
 
-.recipeContainer{
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
+
 
 .heading{
     text-align: center;
@@ -303,3 +313,66 @@ p{
 .backLink:hover{
     background-color: rgb(30, 19, 99);
 }
+
+/* ======================================= Media queries ======================================= */
+
+@media (orientation: portrait) {
+    .recipeContainer {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .recipeLinkContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        }
+
+    .recipeLink{
+        background-color: #5fdda0;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: max-content;
+        box-shadow:  0px 2px 2px #aea6a6;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .recipeFilter{
+        /* display: flex;
+        flex-direction: column; */
+        margin: 10px;
+        box-shadow:  0px 2px 2px #aea6a6;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #allRecipes{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .recipeBoxContainer{
+        width: max-content;
+        height: max-content;
+    }
+}
+
+

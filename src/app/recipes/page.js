@@ -6,6 +6,7 @@ import "./recipe.css";
 export default function recipesMain() {
   return (
     <>
+    <div className="recipeContainer">
       <div className="recipeLinkContainer">
         <Link className="recipeLink" href={"/recipes/add-recipe"}>
           Add your own recipe!
@@ -16,6 +17,7 @@ export default function recipesMain() {
       </div>
 
       <AllRecipes />
+      </div>
     </>
   );
 }
