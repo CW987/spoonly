@@ -11,7 +11,9 @@ export default function NavBar() {
   return (
     <div id="NavBarMain">
       <Link id="NavLogo" href={"/"}>
-        <Image src={FillInLogo} width={150} height={150} alt="Logo"></Image>
+        <Image src={FillInLogo} width={150} height={150} alt="Logo" />
+      
+      <Image src="/Spoonly.png" width={150} height={150} alt="TextLogo"></Image>
       </Link>
       <Links />
       <SearchBar />

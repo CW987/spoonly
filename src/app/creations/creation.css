@@ -1,50 +1,50 @@
-.creationsLinkContainer{
-    /* display: flex; */
-    flex-direction: column;
-    align-items: start;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.creationsLinkContainer {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: start;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.creationsLink{
-    display: flex;
-    flex-direction: column;
-    background-color: #FEA6FF;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+.creationsLink {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(116, 152, 114);;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.creationsFilter{
-    margin: 10px;
+.creationsFilter {
+  margin: 10px;
 }
 
 /* ============================= Form styles =============================== */
 
-.creationContainer{
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.creationContainer {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.heading{
-    text-align: center;
-    font-size: 3rem;
+.heading {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.creationFormContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    border-radius: 20px;
-    background: #77DD77;
-    box-shadow:  0px 2px 2px #aea6a6;
+.creationFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 20px;
+  background: #3c6e3c;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
 /* .name{
@@ -52,236 +52,233 @@
     flex-direction: ;
 } */
 
-.cuisine-dish{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
+.cuisine-dish {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
-p{
-    margin-top: 10px;
-    font-size: 1.5rem;
+p {
+  margin-top: 10px;
+  font-size: 1.5rem;
 }
 
-.rating-img{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
+.rating-img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.creationImg{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
+.creationImg {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
 }
 
-.img:hover{
-    background-color: white;
+.img:hover {
+  background-color: white;
 }
 
 /* ======================================== creations page styles=========================== */
 
-#allCreations{
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
+#allCreations {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
 }
 
-.creationBoxContainer{
-    display: inline-block;
+.creationBoxContainer {
+  display: inline-block;
 }
 
-.creationBox{
-    display: flex;
-    padding: 10px;
+.creationBox {
+  display: flex;
+  padding: 10px;
 }
 
-.creationCard{
-    width: 340px;
-    height: 300px;
+.creationCard {
+  width: 340px;
+  height: 300px;
 }
 
-.ptext{
-    font-size: 1rem;
+.ptext {
+  font-size: 1rem;
 }
 
 /* ==================================== A creation ========================== */
 
-.myCreationPage{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+.myCreationPage {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-.creation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: start; */
-    background-color: #FF8989;
-    border-radius: 10px;
-    width: 100%;
-    height: max-content;
-    margin-top: 10px;
-    padding: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.creation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: start; */
+  background-color: #4e8155;
+  border-radius: 10px;
+  width: 100%;
+  height: max-content;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.heading{
-    font-size: 2rem;
+.heading {
+  font-size: 2rem;
 }
 
 /* ================================= creation comment form ===================== */
 
-.creationCommentsForm{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    /* justify-content: end; */
-    background-color: greenyellow;
-    /* border-radius: 10px; */
-    width: 100%;
-    height: max-content;
-    margin-top: 10px;
-    padding: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.creationCommentsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: end; */
+  background-color: rgb(155, 171, 130);
+  /* border-radius: 10px; */
+  width: 100%;
+  height: max-content;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
 /*  ============================ Comment =========================== */
 
-.commentContainer{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: stretch; */
-    width: 100%;
-    /* height: max-content; */
-    margin-top: 10px;
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: stretch; */
+  width: 100%;
+  /* height: max-content; */
+  margin-top: 10px;
 }
-.comment{
-    box-shadow:  0px 2px 2px #aea6a6;
-    padding: 10px;
-    margin-bottom: 15px;
-
-}
-
-.buttons{
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: end; */
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
+.comment {
+  box-shadow: 0px 2px 2px #aea6a6;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
-.deleteCreation{
-    background-color: dodgerblue;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.buttons {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: end; */
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
 }
 
-.deleteCreation:hover{
-    background-color: rgb(7, 10, 13);
+.deleteCreation {
+  background-color: rgb(138, 28, 28);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.updateLink{
-    background-color: rgb(176, 30, 255);
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.deleteCreation:hover {
+  background-color: rgb(7, 10, 13);
 }
 
-.updateLink:hover{
-    background-color: #FEA6FF;
+.updateLink {
+  background-color: rgb(55, 145, 184);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
+}
+
+.updateLink:hover {
+  background-color: #6a7a5d;
 }
 /* =========================== update creation page ==================== */
 
-.updateForm{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.updateForm {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.uFormContainer{
-    background-color: chartreuse;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.uFormContainer {
+  background-color: chartreuse;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.formButton{
-    background-color: white;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow:  0px 2px 2px #aea6a6;;
-    width: max-content;;
+.formButton {
+  background-color: white;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px #aea6a6;
+  width: max-content;
 }
 
-.formButton:hover{
-    background-color: rgb(58, 217, 223);
+.formButton:hover {
+  background-color: rgb(58, 217, 223);
 }
 
-
-.backLink{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    height: max-content ;
-    width: max-content;
-    background-color: slateblue;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow:  0px 2px 2px #aea6a6;;
+.backLink {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  height: max-content;
+  width: max-content;
+  background-color: slateblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.backLink:hover{
-    background-color: rgb(30, 19, 99);
+.backLink:hover {
+  background-color: rgb(30, 19, 99);
 }
-
