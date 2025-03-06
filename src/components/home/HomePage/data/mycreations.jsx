@@ -25,7 +25,7 @@ export default async function MyCreationsData({ params }) {
     <div>
       {brokenCreeations.map((recipe) => (
         <div className="recipeBoxContainer" key={recipe.creations_id}>
-          <Link href={`/recipes/${recipe.creation_id}`}>
+          <Link href={`/creations/${recipe.creations_id}`}>
             <Box className="recipeBox" maxWidth="500px">
               <Card className="recipe" size="2">
                 <Inset clip="padding-box" side="top" pb="current">
