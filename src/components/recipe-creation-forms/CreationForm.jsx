@@ -11,6 +11,10 @@ export default function CreationForm() {
       <div className="creationFormContainer p-4 mt-4">
       <form action={SubmitCreation} className="flex flex-col items-stretch">
 
+      <div className="heading">
+                <h1>Upload your own creation 🍛</h1>
+            </div>
+
       <label htmlFor="creation_name" className="text-center">Creation Name: </label>
       <input className=" text-center border-2 p-2 rounded-sm" type="text" name="creation_name" required />
 

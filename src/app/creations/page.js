@@ -6,6 +6,7 @@ import "./creation.css";
 export default function creationsMain() {
   return (
     <>
+    <div className="creationsPage">
       <div className="creationsLinkContainer">
         <Link className="creationsLink" href={"/creations/add-creation"}>
           Add your own creation!
@@ -16,6 +17,7 @@ export default function creationsMain() {
       </div>
 
         <AllCreations/>
+        </div>
     </>
   );
 }

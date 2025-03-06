@@ -24,7 +24,7 @@ export default async function AllRecipes() {
         <div className="recipeBoxContainer" key={recipe.recipe_id}>
           <Link href={`/recipes/${recipe.recipe_id}`}>
             <Box className="recipeBox" maxWidth="400px">
-              <Card className="recipe" size="2">
+              <Card className="recipe shadow-[0px_2px_2px_#aea6a6] bg-white hover:bg-green-500" size="2" >
                 <Inset clip="padding-box" side="top" pb="current">
                   <img
                     src={recipe.image}
@@ -34,7 +34,6 @@ export default async function AllRecipes() {
                       objectFit: "cover",
                       width: "100%",
                       height: 180,
-                      backgroundColor: "var(--gray-5)",
                     }}
                   />
                 </Inset>
