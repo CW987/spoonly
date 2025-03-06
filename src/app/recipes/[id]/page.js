@@ -33,6 +33,7 @@ export default async function RecipePage({ params }) {
 
   return (
     <>
+      <div className="wholeRecipePage">
       <div className="myRecipePage">
         <RecipeInfo params={paramsId} />
         <SignedIn>
@@ -48,7 +49,14 @@ export default async function RecipePage({ params }) {
         </div>
       </div>
 
-      <div className="buttons">
+      <div className="recipeButtons">
+
+                <div className="updateLink">
+                <Link
+                    href={`/recipes/${recipeParams.id}/update-recipe`}>
+                    Update recipe
+                </Link>
+                </div>
 
                 <div className="deleteRecipe">
                     <form action={handleDeleteRecipe}>
@@ -57,13 +65,7 @@ export default async function RecipePage({ params }) {
                                 Delete this recipe</button>
                     </form>
                 </div>
-
-                <div className="updateLink">
-                <Link
-                    href={`/recipes/${recipeParams.id}/update-recipe`}>
-                    Update creation
-                </Link>
-                </div>
+            </div>
             </div>
     </>
   );

@@ -1,25 +1,46 @@
+.creationsPage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 .creationsLinkContainer {
-  /* display: flex; */
-  flex-direction: column;
-  align-items: start;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .creationsLink {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(116, 152, 114);;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5fdda0;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    box-shadow:  0px 2px 2px #aea6a6;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.creationsLink:hover{
+    background-color: #73EC8B;
 }
 
 .creationsFilter {
   margin: 10px;
+  width: 100%;
 }
 
 /* ============================= Form styles =============================== */
@@ -36,6 +57,7 @@
 .heading {
   text-align: center;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .creationFormContainer {
@@ -43,7 +65,7 @@
   flex-direction: column;
   align-items: stretch;
   border-radius: 20px;
-  background: #3c6e3c;
+  background: #77DD77;
   box-shadow: 0px 2px 2px #aea6a6;
 }
 
@@ -54,6 +76,7 @@
 
 .cuisine-dish {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
@@ -66,6 +89,7 @@ p {
 
 .rating-img {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5px;
@@ -118,6 +142,18 @@ p {
 }
 
 /* ==================================== A creation ========================== */
+
+.wholeCreationPage{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .myCreationPage {
   grid-column-start: 3;
@@ -228,6 +264,12 @@ p {
   background-color: #6a7a5d;
 }
 /* =========================== update creation page ==================== */
+.updatePage{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 .updateForm {
   grid-column-start: 3;
@@ -281,4 +323,94 @@ p {
 
 .backLink:hover {
   background-color: rgb(30, 19, 99);
+}
+
+/* ===== media queries ============================= */
+
+@media (orientation: portrait) {
+    .creationsPage{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .creationsLinkContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        }
+
+    .creationsLink{
+        background-color: #5fdda0;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: max-content;
+        box-shadow:  0px 2px 2px #aea6a6;
+        color: white;
+        font-weight: bold;
+    }
+    .creationsFilter{
+        margin: 10px;
+        box-shadow:  0px 2px 2px #aea6a6;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .creationContainer{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #allCreations {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .creationCard{
+        width: max-content;
+        height: max-content;
+    }
+
+    .wholeCreationPage{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .updatePage{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
 }

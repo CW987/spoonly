@@ -44,17 +44,18 @@ export default async function UpdateRecipe({ params }) {
     return (
         <>
 
+        <div className="updatePage">
+
         <div className="backLink">
-        <Link href={`/recipes/${updateParams.id}`}> Back to recipes
+        <Link href={`/recipes/${updateParams.id}`}> Back to {wrangledRecipe.recipe_name}
         </Link>
         </div>
 
         <div className="updateForm">
 
-        <h1 className="text-center text-4xl m-2 p-2">Update your recipe</h1>
-
         <div className="">
                 <form action={handleUpdate} className="flex flex-col items-stretch uFormContainer">
+                <h1 className="text-center text-4xl m-2 p-2 font-bold">Update your recipe</h1>
         
                 <label htmlFor="recipe_name" className="text-center font-bold text-xl">Recipe Name: </label>
                 <input 
@@ -87,7 +88,7 @@ export default async function UpdateRecipe({ params }) {
                 </div>
 
 
-                <div className="time-servings">
+                <div className="time-servings-rate">
                     <div>
                     <label className="font-bold text-xl" htmlFor="cook_time">Cook Time ⏲️:</label>
                     <input
@@ -152,12 +153,13 @@ export default async function UpdateRecipe({ params }) {
                     accept="image/*"/>
                 </div>
         
-                <button className="formButton font-bold text-xl">Update Creation!</button>
+                <button className="formButton font-bold text-xl">Update Recipe!</button>
                 {/* <button className="border-2">Submit Creation!</button> */}
                 </form>
 
             </div>
 
+        </div>
         </div>
 
         </>

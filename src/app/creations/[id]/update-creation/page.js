@@ -47,6 +47,7 @@ export default async function UpdateCreation({ params }) {
 
   return (
     <>
+    <div className="updatePage">
 
     <div className="backLink">
       <Link href={`/creations/${updateParams.id}`}> Back to creation
@@ -156,6 +157,8 @@ export default async function UpdateCreation({ params }) {
             </form>
 
           </div>
+
+      </div>
 
       </div>
 

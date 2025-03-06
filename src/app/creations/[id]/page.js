@@ -26,6 +26,7 @@ export default async function CreationIDPage({params}){
 
     return(
         <>
+        <div className="wholeCreationPage">
         <div className="myCreationPage">
             {wrangledCreation.map((creation)=>(
                 <div key={creation.creations_id} className="creation">
@@ -56,6 +57,7 @@ export default async function CreationIDPage({params}){
                     Update creation
                 </Link>
                 </div>
+            </div>
             </div>
         </>
     )

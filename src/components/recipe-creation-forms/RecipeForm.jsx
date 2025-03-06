@@ -9,10 +9,11 @@ export default function RecipeForm(){
         <div className="recipeFormContainer p-4 mt-4">
             <form action={SubmitRecipe}
                 className="flex flex-col items-stretch">
+                <h1 className="heading">Upload your recipe 👩‍🍳</h1>
             
-                <label className="text-center" htmlFor="recipe_name">Recipe Name 🍱:</label>
+                <label className="text-center text-3xl" htmlFor="recipe_name">Recipe Name 🍱:</label>
                 <input
-                        className="border-2 text-center"
+                        className="border-2 text-center h-12 text-2xl"
                         type="text"
                         name="recipe_name"
                         required/>
@@ -90,7 +91,7 @@ export default function RecipeForm(){
                 </textarea>
 
                 <div className="recipeImg">
-                <label htmlFor="image">My Recipe Image 📸: </label>
+                <label htmlFor="image">My Recipe Image 📸:  </label>
                 <input
                     className="img"
                     type="file"
