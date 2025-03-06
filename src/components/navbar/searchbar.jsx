@@ -1,9 +1,11 @@
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { TextField } from "@radix-ui/themes";
+import AccessibilityComponent from "../accessability/main";
 
 export default function SearchBar() {
   return (
     <div id="NavSearch">
+      <AccessibilityComponent />
       <TextField.Root placeholder="Search For Recipes">
         <TextField.Slot>
           <MagnifyingGlassIcon height="16" width="16" />

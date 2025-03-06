@@ -1,18 +1,26 @@
 import { DropdownMenu, Avatar, Button } from "@radix-ui/themes";
 import Link from "next/link";
 import { useUser, useClerk } from "@clerk/nextjs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AvatarSelect from "./avatar";
 
 export default function SignedInDropDown() {
   const [open, setOpen] = useState(false);
   const { user } = useUser();
+  const userID = user?.id;
+  const [image, setImage] = useState(user.imageUrl);
   const { signOut } = useClerk();
+
+  useEffect(() => {
+    AvatarSelect(userID).then(setImage);
+  });
+
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger style={{ cursor: "pointer" }}>
         <div role="button" id="dropDownTriggerDiv">
           <Avatar
-            src={user.imageUrl}
+            src={image}
             size="8"
             onClick={() => setOpen(true)}
             fallback="Cameron da best"

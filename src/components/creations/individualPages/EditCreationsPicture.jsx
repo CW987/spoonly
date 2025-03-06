@@ -2,16 +2,17 @@
 
 import { CldUploadWidget } from "next-cloudinary";
 import { Button } from "@radix-ui/themes";
-import UploadImage from "./newProfileImageUpload";
+import UploadNewCreationsImage from "./EditCreationsPictureSubmit";
 
-export default function NewProfilePic() {
+export default function EditCreationsPic({ params }) {
+  console.log(params);
   return (
     <CldUploadWidget
       uploadPreset="ml_default"
       onSuccess={(results) => {
         const imageUrl = results.info.secure_url;
         console.log("Image URL", imageUrl);
-        UploadImage(imageUrl);
+        UploadNewCreationsImage(imageUrl, params);
       }}
     >
       {({ open }) => {
