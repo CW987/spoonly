@@ -33,7 +33,7 @@ export default async function CreationIDPage({params}){
                     <p>Cuisine 🌍: {creation.cuisine}</p>
                     <p>{creation.dish_type}</p>
                     <p>Do you recommend this? {creation.recommend}</p>
-                    <p>Your rating ⭐️: {creation.rating} /5 </p>
+                    <p>Your rating 🥄: {creation.rating} /5 </p>
                     <p>Your thoughts: {creation.post_content}</p>
                 </div>
             ))}
