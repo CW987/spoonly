@@ -19,13 +19,13 @@ export default async function UserCreationsCards({ params }) {
   return (
     <div>
       {wrangledCreations.map((recipe) => (
-        <div className="recipeBoxContainer" key={recipe.creation_id}>
-          <Link href={`/recipes/${recipe.creation_id}`}>
+        <div className="recipeBoxContainer" key={recipe.creations_id}>
+          <Link href={`/creations/${recipe.creations_id}`}>
             <Box className="recipeBox" maxWidth="500px">
               <Card className="recipe" size="2">
                 <Inset clip="padding-box" side="top" pb="current">
                   <img
-                    src="https://images.unsplash.com/photo-1617050318658-a9a3175e34cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                    src={recipe.image}
                     alt="Bold typography"
                     style={{
                       display: "block",
