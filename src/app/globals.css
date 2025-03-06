@@ -42,7 +42,7 @@ body {
 @media (orientation: portrait) {
   #RadixTheme {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 2fr 16fr 1fr;
   }
 }

@@ -18,7 +18,7 @@
 
 @media (orientation: portrait) {
   #AboutDiv {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 2;
   }
 
   #AboutCard {
