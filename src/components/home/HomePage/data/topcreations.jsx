@@ -9,18 +9,16 @@ export default async function TopCreationsData() {
   const creations = await db.query(
     `SELECT *
     FROM creations
-    ORDER BY rating
+    ORDER BY rating desc
     LIMIT 5;`
   );
 
   const brokenCreeations = creations.rows;
 
-  console.log(brokenCreeations);
-
   return (
     <div>
       {brokenCreeations.map((recipe) => (
-        <div className="recipeBoxContainer" key={recipe.creation_id}>
+        <div className="recipeBoxContainer" key={recipe.creations_id}>
           <Link href={`/recipes/${recipe.creation_id}`}>
             <Box className="recipeBox" maxWidth="500px">
               <Card className="recipe" size="2">

@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function () {
   return (
     <div id="NavBarLinks">
-      <Button asChild size="4">
+      <Button size="4" className="NavBarButtons">
         <Link className="NavBarLinks" href={`/recipes`}>
           Recipes
         </Link>
       </Button>
-      <Button asChild size="4">
+      <Button size="4" className="NavBarButtons">
         <Link className="NavBarLinks" href={`/creations`}>
           Creations
         </Link>

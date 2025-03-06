@@ -9,13 +9,11 @@ export default async function TopRecipesData() {
   const creations = await db.query(
     `SELECT *
     FROM recipes
-    ORDER BY rating
+    ORDER BY rating desc
     LIMIT 5;`
   );
 
   const brokenCreeations = creations.rows;
-
-  console.log(brokenCreeations);
 
   return (
     <div>

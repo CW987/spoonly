@@ -2,8 +2,10 @@
 
 import "../../../app/recipes/recipe.css"
 import { db } from "@/utils/dbConnection";
+import { auth } from "@clerk/nextjs/server";
 
-export default async function RecipeInfo({ params }) {
+
+export default async function RecipesTest({ params }) {
 
   const recipe = await db.query(`SELECT * FROM recipes WHERE recipe_id = $1`, [
     params,

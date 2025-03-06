@@ -96,23 +96,6 @@ export default function EditUserForm() {
           <CountryInput />
         </Form.Control>
       </Form.Field>
-      <Form.Field className="FormField" name="country">
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            justifyContent: "space-between",
-          }}
-        >
-          <Form.Label className="FormLabel">Country</Form.Label>
-          <Form.Message className="FormMessage" match="valueMissing">
-            Please enter your bio
-          </Form.Message>
-        </div>
-        <Form.Control asChild>
-          <input type="file"></input>
-        </Form.Control>
-      </Form.Field>
       <Form.Submit asChild>
         <Button className="Button" type="submit" style={{ marginTop: 10 }}>
           Post question
