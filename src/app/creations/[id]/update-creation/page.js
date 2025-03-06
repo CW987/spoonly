@@ -129,7 +129,7 @@ export default async function UpdateCreation({ params }) {
       
               <div className="rating-img">
                 <div>
-              <label className="font-bold text-xl" htmlFor="rating">Rating ⭐️:</label>
+              <label className="font-bold text-xl" htmlFor="rating">Rating 🥄:</label>
               <input
                 className="border-2 p-2 rounded-sm"
                 type="number"
