@@ -1,15 +1,35 @@
-#AboutDiv {
-  grid-area: 3 / 1 / 4 / 6;
+@media (orientation: landscape) {
+  #AboutDiv {
+    grid-area: 3 / 1 / 4 / 6;
+  }
+
+  #AboutCard {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #AboutText {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 
-#AboutCard {
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
+@media (orientation: portrait) {
+  #AboutDiv {
+    grid-area: 3 / 1 / 4 / 3;
+  }
 
-#AboutText {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  #AboutCard {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #AboutText {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }

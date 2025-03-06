@@ -21,8 +21,6 @@ export default async function MyCreationsData({ params }) {
 
   const brokenCreeations = creations.rows;
 
-  console.log(brokenCreeations);
-
   return (
     <div>
       {brokenCreeations.map((recipe) => (
