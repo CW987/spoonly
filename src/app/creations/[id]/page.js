@@ -52,7 +52,7 @@ export default async function CreationIDPage({params}){
 
                 <div className="updateLink">
                 <Link
-                    href={`/creations/${creationParams.id}/update-creation`}>
+                    href={`/creations/${creationParams.id}/update-recipe`}>
                     Update creation
                 </Link>
                 </div>

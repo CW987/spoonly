@@ -49,19 +49,22 @@ export default async function RecipePage({ params }) {
       </div>
 
       <div className="buttons">
-        <div className="deleteRecipe">
-          <form action={handleDeleteRecipe}>
-            <button type="submit">Delete this recipe</button>
-          </form>
-        </div>
 
-        <div className="updateLink">
-          {/* <Link
-                    href={`/creations/${creationParams.id}/update-creation`}>
+                <div className="deleteRecipe">
+                    <form action={handleDeleteRecipe}>
+                        <button
+                            type="submit">
+                                Delete this recipe</button>
+                    </form>
+                </div>
+
+                <div className="updateLink">
+                <Link
+                    href={`/recipes/${recipeParams.id}/update-recipe`}>
                     Update creation
-                </Link> */}
-        </div>
-      </div>
+                </Link>
+                </div>
+            </div>
     </>
   );
 }
