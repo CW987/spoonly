@@ -39,223 +39,239 @@
     box-shadow:  0px 2px 2px #aea6a6;
 }
 
-
-
-.heading{
-    text-align: center;
-    font-size: 3rem;
+.heading {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.recipeFormContainer{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: right; */
-    align-items: stretch;
-    /* width: 100%; */
-    border-radius: 20px;
-    background: #77DD77;
-    box-shadow:  0px 8px 8px #000000;
+.recipeFormContainer {
+  background-color: rgb(171, 155, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 20px;
+  background: #86a486;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
-.dish-cuisine{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
+label {
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #f1f1f1;
 }
 
-.time-servings{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-    
+input,
+textarea,
+button {
+  margin-top: 10px;
+  width: 100%;
 }
 
-.recipeImg{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
+.dish-cuisine {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.img:hover{
-    background-color: white;
+.time-servings {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
-label{
-    font-size: 1.5rem;
-    padding-top: 7px;
+.recipeImg {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
 }
 
-input{
-    border-radius: 5px;
-    padding: 3px;
-    background-color: #aae5b7;
+.img:hover {
+  background-color: white;
 }
 
-textarea{
-    border-radius: 5px;
-    height: 100px;
-    padding: 3px;
-    background-color: #aae5b7;
-}
-p{
-    font-size: larger;
-    padding: 5px;
+label {
+  font-size: 1.5rem;
+  padding-top: 7px;
 }
 
-.formButton{
-    background-color: #15B392;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: larger;
+input {
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #d4d5d4;
 }
 
-.formButton:hover{
-	background-color: #73EC8B;
+textarea {
+  border-radius: 5px;
+  height: 100px;
+  padding: 3px;
+  background-color: #d4d5d4;
+}
+p {
+  font-size: larger;
+  padding: 5px;
 }
 
-
-.recipeForm{
-    /* display: flex; */
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: start;
+.formButton {
+  background-color: #15b392;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: larger;
 }
 
-#allRecipes{
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
+.formButton:hover {
+  background-color: #73ec8b;
+  background-color: #468745;
+  transform: scale(1.05);
 }
 
-.recipeBoxContainer{
-    display: inline-block;
+.recipeForm {
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: start;
 }
 
-.recipeBox{
-    display: flex;
-    padding: 10px;
+#allRecipes {
+    background-color: rgb(171, 155, 139);
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
 }
 
-.recipe{
-    width: 340px;
-    height: 300px;
+.recipeBoxContainer {
+    background-color: rgb(171, 155, 139);
+  display: inline-block;
+}
+
+.recipeBox {
+  display: flex;
+  padding: 10px;
+}
+
+.recipe {
+  width: 340px;
+  height: 300px;
 }
 
 /* ================================= specific recipe page ======================== */
 
-.myRecipePage{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+.myRecipePage {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-.theRecipe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffc089;
-    border-radius: 10px;
-    width: 100%;
-    height: max-content;
-    margin-top: 10px;
-    padding: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.theRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc089;
+  border-radius: 10px;
+  width: 100%;
+  height: max-content;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
 /* ====================================== recipe comment form ============= */
-.recipeCommentsForm{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background-color: greenyellow;
-    /* border-radius: 10px; */
-    width: 100%;
-    height: max-content;
-    margin-top: 10px;
-    padding: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.recipeCommentsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: greenyellow;
+  /* border-radius: 10px; */
+  width: 100%;
+  height: max-content;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
 /* ================= comments ================================ */
 
-.recipeCommentContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
+.recipeCommentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.recipeComment{
-    box-shadow:  0px 2px 2px #aea6a6;
-    padding: 10px;
-    margin-bottom: 15px;
+.recipeComment {
+  box-shadow: 0px 2px 2px #aea6a6;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 /* ====== delete button =============================== */
 
-.buttons{
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
+.buttons {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
 }
 
-.deleteRecipe{
-    background-color: dodgerblue;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.deleteRecipe {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.deleteRecipe:hover{
-    background-color: rgb(7, 10, 13);
+.deleteRecipe:hover {
+  background-color: rgb(7, 10, 13);
 }
 
-.updateLink{
-    background-color: rgb(176, 30, 255);
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    height: max-content ;
-    width: max-content;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    box-shadow:  0px 2px 2px #aea6a6;
+.updateLink {
+  background-color: rgb(176, 30, 255);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  height: max-content;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 2px #aea6a6;
 }
 
-.updateLink:hover{
-    background-color: #FEA6FF;
+.updateLink:hover {
+  background-color: #6e7664;
 }
 
 /* =========================== update recipe page ==================== */
@@ -374,5 +390,3 @@ p{
         height: max-content;
     }
 }
-
-

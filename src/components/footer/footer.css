@@ -1,17 +1,19 @@
 @media (orientation: landscape) {
   #Footer {
-    background-color: paleturquoise;
+    background-color: rgb(116, 152, 114);
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
+    font-size: 1.5rem;
+    /* border-radius: 20px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
     grid-row-start: 3;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 
 @media (orientation: portrait) {
   #Footer {
