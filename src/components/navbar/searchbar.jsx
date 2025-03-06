@@ -1,9 +1,5 @@
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { TextField } from "@radix-ui/themes";
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 
 export default function SearchBar() {
   return (
