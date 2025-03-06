@@ -11,21 +11,25 @@ export default function CreationForm() {
       <div className="creationFormContainer p-4 mt-4">
       <form action={SubmitCreation} className="flex flex-col items-stretch">
 
+      <label htmlFor="creation_name" className="text-center">Creation Name: </label>
+      <input className=" text-center border-2 p-2 rounded-sm" type="text" name="creation_name" required />
+
       <div className="cuisine-dish">
+      
         <div>
         <label htmlFor="cuisine">Cuisine 🌍:</label>
-        <input className="border-2" type="text" name="cuisine" required />
+        <input className="border-2 p-2 rounded-sm" type="text" name="cuisine" required />
         </div>
 
         <div>
         <label htmlFor="dish_type">Dish Type 🍽️:</label>
-        <input className="border-2" type="text" name="dish_type" required />
+        <input className="border-2 p-2 rounded-sm" type="text" name="dish_type" required />
         </div>
         </div>
 
         <label htmlFor="post_content">Content 📝:</label>
         <textarea
-          className="border-2"
+          className="border-2 p-2 rounded-sm"
           type="text"
           name="post_content"
           required
@@ -60,7 +64,7 @@ export default function CreationForm() {
           <div>
         <label htmlFor="rating">Rating ⭐️:</label>
         <input
-          className="border-2"
+          className="border-2 p-2 rounded-sm"
           type="number"
           name="rating"
           min={0}

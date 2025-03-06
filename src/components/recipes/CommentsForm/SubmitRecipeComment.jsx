@@ -36,6 +36,6 @@ export async function SubmitRecipeComment(formValues) {
     [recipeCommentData, recipeId, finalUser]
   );
 
-  revalidatePath(`/recipes/`);
-  redirect(`/recipes/`);
+  revalidatePath(`/recipes/${recipeId}`);
+  redirect(`/recipes/${recipeId}`);
 }

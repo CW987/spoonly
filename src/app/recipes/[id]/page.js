@@ -1,7 +1,10 @@
 import RecipeCommentsForm from "@/components/recipes/CommentsForm/RecipeCommentsForm";
 import RecipeInfo from "@/components/recipes/individualPages/Recipe";
 import { db } from "@/utils/dbConnection";
-import DeleteButtonRecipe from "@/components/recipes/CommentsForm/DeleteButtonRecipe";
+import "../recipe.css"
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default async function RecipePage({ params }) {
   const recipeParams = await params;
@@ -16,19 +19,45 @@ export default async function RecipePage({ params }) {
   const wrangledRecipeComment = recipeComment.rows
   console.log(wrangledRecipeComment)
 
+  async function handleDeleteRecipe(){
+    "use server"
+    await db.query(`DELETE FROM recipes WHERE recipe_id = $1`, [recipeParams.id])
+    revalidatePath(`/recipes`)
+    redirect(`/recipes`)
+}
+
 
   return (
     <>
-      <h1>A recipe!</h1>
-      <RecipeInfo params={paramsId} />
-      <RecipeCommentsForm paramId={paramsId} />
+      <div className="myRecipePage">
+        <RecipeInfo params={paramsId} />
+        <RecipeCommentsForm paramId={paramsId} />
 
-      {wrangledRecipeComment.map((comment)=>(
-        <div key={comment.recipe_comments_id}>
-          <p>{comment.comment_content}</p>
-          <DeleteButtonRecipe recipeId={comment.recipe_comment_id}/>
+        <div className="recipeCommentContainer">
+            {wrangledRecipeComment.map((comment)=>(
+              <div key={comment.recipe_comments_id} className="recipeComment">
+                <p>💬: {comment.comment_content}</p>
+              </div>
+            ))}
         </div>
-      ))}
+      </div>
+
+      <div className="buttons">
+                <div className="deleteRecipe">
+                    <form action={handleDeleteRecipe}>
+                        <button
+                            type="submit">
+                                Delete this recipe</button>
+                    </form>
+                </div>
+
+                <div className="updateLink">
+                {/* <Link
+                    href={`/creations/${creationParams.id}/update-creation`}>
+                    Update creation
+                </Link> */}
+                </div>
+            </div>
     </>
   );
 }
