@@ -48,7 +48,7 @@ Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
 - Difficulties implementing an API
 - 
 
-🎯What went really well and what could have gone better?
+🎯What went really well?
 
 - Discussed a few project ideas and quickly came to a joint decision that we would work on a recipe sharing application
 - Efficient planning on Day 1 meant we could set to work on Day 2
@@ -63,3 +63,7 @@ PIVOT!
 - On Tuesday afternoon, we realised that the structure of our pages wasn't overly intuitive and came together as a group to refine this. Although it did mean going over some work, much of the functionality already existed and we were able to make the page much more user-friendly (e.g. removing the seperate 'Add Post' page and instead having a button on the Recipes and Creation pages).
 
 ---
+
+What could have gone better?
+
+- 

@@ -17,17 +17,17 @@ export default function CreationForm() {
       <div className="cuisine-dish">
       
         <div>
-        <label htmlFor="cuisine">Cuisine 🌍:</label>
+        <label htmlFor="cuisine">Cuisine 🌍*:</label>
         <input className="border-2 p-2 rounded-sm" type="text" name="cuisine" required />
         </div>
 
         <div>
-        <label htmlFor="dish_type">Dish Type 🍽️:</label>
+        <label htmlFor="dish_type">Dish Type 🍽️*:</label>
         <input className="border-2 p-2 rounded-sm" type="text" name="dish_type" required />
         </div>
         </div>
 
-        <label htmlFor="post_content">Content 📝:</label>
+        <label htmlFor="post_content">Content 📝*:</label>
         <textarea
           className="border-2 p-2 rounded-sm"
           type="text"
@@ -35,7 +35,7 @@ export default function CreationForm() {
           required
         ></textarea>
 
-        <p>Would you recommend this for others 👍/👎? </p>
+        <p>Would you recommend this for others 👍/👎? *</p>
         <label 
         htmlFor="recommend"
         className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export default function CreationForm() {
 
         <div className="rating-img">
           <div>
-        <label htmlFor="rating">Rating ⭐️:</label>
+        <label htmlFor="rating">Rating ⭐️*:</label>
         <input
           className="border-2 p-2 rounded-sm"
           type="number"

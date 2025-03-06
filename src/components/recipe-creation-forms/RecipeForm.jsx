@@ -1,7 +1,6 @@
 // import { db } from "@/utils/dbConnection";
 import { SubmitRecipe } from "./SubmitRecipe"
 
-
 export default function RecipeForm(){
 
     return (
@@ -10,7 +9,7 @@ export default function RecipeForm(){
             <form action={SubmitRecipe}
                 className="flex flex-col items-stretch">
             
-                <label className="text-center" htmlFor="recipe_name">Recipe Name 🍱:</label>
+                <label className="text-center" htmlFor="recipe_name">Recipe Name 🍱*:</label>
                 <input
                         className="border-2 text-center"
                         type="text"
@@ -19,7 +18,7 @@ export default function RecipeForm(){
 
                 <div className="dish-cuisine">
                     <div className="cuisine">
-                <label htmlFor="cuisine">Cuisine 🌍:</label>
+                <label htmlFor="cuisine">Cuisine 🌍*:</label>
                 <input
                         className="border-2"
                         type="text"
@@ -28,7 +27,7 @@ export default function RecipeForm(){
                         </div>
 
                 <div>
-                <label htmlFor="dish_type">Dish Type 🍽️:</label>
+                <label htmlFor="dish_type">Dish Type 🍽️*:</label>
                 <input
                         className="border-2"
                         type="text"
@@ -39,7 +38,7 @@ export default function RecipeForm(){
 
                 <div className="time-servings">
                 <div>
-                <label htmlFor="cook_time">Cook Time ⏲️:</label>
+                <label htmlFor="cook_time">Cook Time ⏲️*:</label>
                 <input
                         className="border-2"
                         type="number"
@@ -50,7 +49,7 @@ export default function RecipeForm(){
                 </div>
 
                 <div>
-                <label htmlFor="servings">Servings 🧍‍♀️🧍‍♂️🧍:</label>
+                <label htmlFor="servings">Servings 🧍‍♀️🧍‍♂️🧍*:</label>
                 <input
                         className="border-2"
                         type="number"
@@ -60,7 +59,7 @@ export default function RecipeForm(){
                 </div>
 
                 <div>
-                <label htmlFor="rating">Rating out of 5 ⭐️:</label>
+                <label htmlFor="rating">Rating out of 5 ⭐️*:</label>
                         <input
                         className="border-2"
                         type="number"
@@ -72,7 +71,7 @@ export default function RecipeForm(){
                 </div>
                 </div>
 
-                <label htmlFor="ingredients">Ingredients 🍅:</label>
+                <label htmlFor="ingredients">Ingredients 🍅*:</label>
 
                 <textarea
                     className="border-2"
@@ -81,7 +80,7 @@ export default function RecipeForm(){
                     required>
                 </textarea>
 
-                <label htmlFor="method">Method 🗒️:</label>
+                <label htmlFor="method">Method 🗒️*:</label>
                 <textarea
                     className="border-2"
                     type="text"

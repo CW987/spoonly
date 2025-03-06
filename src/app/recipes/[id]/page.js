@@ -26,7 +26,6 @@ export default async function RecipePage({ params }) {
     redirect(`/recipes`)
 }
 
-
   return (
     <>
       <div className="myRecipePage">

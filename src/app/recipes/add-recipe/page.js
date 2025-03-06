@@ -3,8 +3,6 @@ import "../recipe.css"
 
 export default function AddRecipePage(){
     
-
-
     return(
         <div className="recipeContainer">
             <div className="heading">
