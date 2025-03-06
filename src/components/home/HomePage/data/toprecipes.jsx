@@ -10,7 +10,7 @@ export default async function TopRecipesData() {
     `SELECT *
     FROM recipes
     ORDER BY rating desc
-    LIMIT 5;`
+    LIMIT 3;`
   );
 
   const brokenCreeations = creations.rows;

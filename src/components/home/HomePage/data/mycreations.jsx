@@ -15,7 +15,7 @@ export default async function MyCreationsData({ params }) {
     JOIN user_data u ON r.user_id = u.user_id
     WHERE u.clerk_id = $1
     ORDER BY r.date_created DESC
-    LIMIT 5;`,
+    LIMIT 3;`,
     [userId]
   );
 
