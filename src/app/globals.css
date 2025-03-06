@@ -18,10 +18,11 @@
   }
 }
 
+
+
 /* global.css */
 
 body {
-  background-image: url("/root/TechEducatorProjects/week12/spoonly/public/bread_background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,6 +34,7 @@ body {
 
 @media (orientation: landscape) {
   #RadixTheme {
+    /* background-image: url("/bread_background.jpg"); */
     display: grid;
     grid-template-columns: 2fr 2fr 8fr 2fr 2fr;
     grid-template-rows: 2fr 8fr 2fr;
@@ -92,14 +94,14 @@ body {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  border: 2px solid rgb(14, 105, 29);
+  border: 2px solid rgb(23, 69, 30);
   border-radius: 50%;
   background-color: white;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .radio-input:checked + .radio-label::before {
-  background-color: rgb(22, 83, 18);
+  background-color: rgb(23, 69, 30);
   border-color: #f8f8f8;
 }
 

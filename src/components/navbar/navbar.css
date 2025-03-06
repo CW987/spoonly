@@ -92,6 +92,7 @@
   }
 
   #NavHeader {
+    color: rgb(143, 179, 136);
     display: flex;
     justify-content: center;
     align-items: center;
