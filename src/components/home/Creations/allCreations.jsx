@@ -32,7 +32,7 @@ export default async function AllCreations() {
                 </Inset>
                 <Text>
                   <Strong>{creation.creation_name}</Strong>
-                  <p className="ptext">Rating ⭐️: {creation.rating} /5</p>
+                  <p className="ptext">Rating 🥄: {creation.rating} /5</p>
                   <p className="ptext">Cuisine 🌍: {creation.cuisine} </p>
                 </Text>
               </Card>

@@ -62,7 +62,7 @@ export default function CreationForm() {
 
         <div className="rating-img">
           <div>
-        <label htmlFor="rating">Rating ⭐️:</label>
+        <label htmlFor="rating">Rating 🥄:</label>
         <input
           className="border-2 p-2 rounded-sm"
           type="number"
