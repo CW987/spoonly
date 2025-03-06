@@ -32,7 +32,7 @@ export default function EditUserForm() {
         >
           <Form.Label className="FormLabel">Username</Form.Label>
           <Form.Message className="FormMessage" match="valueMissing">
-            Please enter your Username
+            Please enter your Username *
           </Form.Message>
           <Form.Message className="FormMessage" match="typeMismatch">
             Please provide your preferred Username
@@ -52,7 +52,7 @@ export default function EditUserForm() {
         >
           <Form.Label className="FormLabel">Email</Form.Label>
           <Form.Message className="FormMessage" match="valueMissing">
-            Please enter your email
+            Please enter your email *
           </Form.Message>
           <Form.Message className="FormMessage" match="typeMismatch">
             Please provide a valid email
@@ -72,7 +72,7 @@ export default function EditUserForm() {
         >
           <Form.Label className="FormLabel">Bio</Form.Label>
           <Form.Message className="FormMessage" match="valueMissing">
-            Please enter your bio
+            Please enter your bio *
           </Form.Message>
         </div>
         <Form.Control asChild>

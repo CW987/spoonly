@@ -1,5 +1,5 @@
 import { db } from "@/utils/dbConnection";
-import "../creation.css"
+import "../creation.css";
 import CreationCommentsForm from "@/components/CreationComments/CreationCommentsForm";
 import CreationComments from "@/components/CreationComments/CreationComments";
 import { revalidatePath } from "next/cache";

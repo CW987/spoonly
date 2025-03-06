@@ -22,6 +22,8 @@
 @media (orientation: portrait) {
   #HomePageMain {
     grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-self: center;
   }
 
   #TopBoxes {
