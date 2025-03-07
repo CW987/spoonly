@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import EditCreationsPic from "@/components/creations/individualPages/EditCreationsPicture";
+import { SignedIn } from "@clerk/nextjs";
 
 export default async function CreationIDPage({ params }) {
   const creationParams = await params;
@@ -44,7 +45,9 @@ export default async function CreationIDPage({ params }) {
             </div>
           ))}
           <EditCreationsPic params={creationParams.id} />
-          <CreationCommentsForm creationParams={creationParamsId} />
+          <SignedIn>
+            <CreationCommentsForm creationParams={creationParamsId} />
+          </SignedIn>
           <CreationComments creationParams={creationParamsId} />
         </div>
 
