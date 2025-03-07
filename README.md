@@ -66,10 +66,12 @@ Cloudinary: https://cloudinary.com/blog/cloudinary-image-uploads-using-nextjs-ap
 https://www.youtube.com/watch?v=rBoveH7tdJU&ab_channel=WesBos
 https://www.youtube.com/watch?v=SKm2XGxbLLM&t=1034s&ab_channel=JackHerrington
 https://www.youtube.com/watch?v=Zz9pLellSQA&t=459s&ab_channel=AnthonySistilli
+Previous assignments for reference
 
 🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
 
 - API errors
+- Not deleting recipes and adding recipes/creations to database, and issues with the database not being connected by the foreign key
 
 🎯What went really well and what could have gone better?
 
