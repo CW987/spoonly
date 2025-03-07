@@ -35,40 +35,36 @@ export default async function RecipePage({ params }) {
   return (
     <>
       <div className="wholeRecipePage">
-      <div className="myRecipePage">
-        <RecipeInfo params={paramsId} />
-        <EditRecipePic params={paramsId} />
-        <SignedIn>
-          <RecipeCommentsForm paramId={paramsId} />
-        </SignedIn>
+        <div className="myRecipePage">
+          <RecipeInfo params={paramsId} />
+          <EditRecipePic params={paramsId} />
+          <SignedIn>
+            <RecipeCommentsForm paramId={paramsId} />
+          </SignedIn>
 
-        <div className="recipeCommentContainer">
-          {wrangledRecipeComment.map((comment) => (
-            <div key={comment.recipe_comments_id} className="recipeComment">
-              <p>💬: {comment.comment_content}</p>
-            </div>
-          ))}
+          <div className="recipeCommentContainer">
+            {wrangledRecipeComment.map((comment) => (
+              <div key={comment.recipe_comments_id} className="recipeComment">
+                <p>💬: {comment.comment_content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="recipeButtons">
+          <div className="updateLink">
+            <Link href={`/recipes/${recipeParams.id}/update-recipe`}>
+              Update recipe
+            </Link>
+          </div>
+
+          <div className="deleteRecipe">
+            <form action={handleDeleteRecipe}>
+              <button type="submit">Delete this recipe</button>
+            </form>
+          </div>
         </div>
       </div>
-
-      <div className="recipeButtons">
-
-                <div className="updateLink">
-                <Link
-                    href={`/recipes/${recipeParams.id}/update-recipe`}>
-                    Update recipe
-                </Link>
-                </div>
-
-                <div className="deleteRecipe">
-                    <form action={handleDeleteRecipe}>
-                        <button
-                            type="submit">
-                                Delete this recipe</button>
-                    </form>
-                </div>
-            </div>
-            </div>
     </>
   );
 }
